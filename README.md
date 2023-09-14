@@ -18,6 +18,7 @@ Funtional Requirements for Admin:
 7). Admin will send alerts to students and teachers(Communication).
 
 Functional Requirements for Students:
+
 1). Firstly as a local user, they can enroll in any course (Course Enrollment).
 
 2). Provide necessary information to admin for verification (User registeration as a Student).
@@ -32,7 +33,8 @@ Functional Requirements for Students:
 
 7). They can view the course materail uploaded by the tecaher in their respective course.
 
-Functional Requirements for Teahers:
+Functional Requirements for Teahers: 
+
 1). Upload the course material for the respective course which he/she is teaching.
 
 2). Take attendece of the students.
@@ -41,7 +43,7 @@ Functional Requirements for Teahers:
 
 4). Maintain a mark sheet of the students.
 
-Project Technology: C# .NET FrameWork
+Project Technology: C# .NET FrameWork, DataBase
 
 Developer Name:Hussain Iftikhar
 
