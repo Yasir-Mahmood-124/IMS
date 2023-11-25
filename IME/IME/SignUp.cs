@@ -87,7 +87,6 @@ namespace IME
                 password = passwordbox.Text;
                 fullName = nameBox.Text;
                 userType = usertype.Text;
-
                 USERS tempUser = new USERS();
                 tempUser.UserName = userName;
                 tempUser.Name = fullName;
@@ -124,9 +123,7 @@ namespace IME
                     cmd.Parameters.AddWithValue("@active", 0);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("user add successfully");
-
                 }
-
             }
         }
     }

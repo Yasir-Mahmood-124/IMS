@@ -27,3 +27,6 @@ E:\S5\SE_PROJECT\IME\IME\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dl
 E:\S5\SE_PROJECT\IME\IME\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 E:\S5\SE_PROJECT\IME\IME\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 E:\S5\SE_PROJECT\IME\IME\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\S5\SE_PROJECT\IME\IME\obj\Debug\net6.0-windows\IME.SIGNIN.resources
+E:\S5\SE_PROJECT\IME\IME\obj\Debug\net6.0-windows\IME.AdminPanel.resources
+E:\S5\SE_PROJECT\IME\IME\obj\Debug\net6.0-windows\IME.Admin.resources
