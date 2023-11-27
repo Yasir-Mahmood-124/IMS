@@ -28,23 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            signUp1 = new SignUp();
+            signin1 = new SIGNIN();
             SuspendLayout();
             // 
-            // signUp1
+            // signin1
             // 
-            signUp1.Dock = DockStyle.Fill;
-            signUp1.Location = new Point(0, 0);
-            signUp1.Name = "signUp1";
-            signUp1.Size = new Size(1126, 674);
-            signUp1.TabIndex = 0;
+            signin1.Dock = DockStyle.Fill;
+            signin1.Location = new Point(0, 0);
+            signin1.Margin = new Padding(2, 2, 2, 2);
+            signin1.Name = "signin1";
+            signin1.Size = new Size(788, 404);
+            signin1.TabIndex = 0;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1126, 674);
-            Controls.Add(signUp1);
+            ClientSize = new Size(788, 404);
+            Controls.Add(signin1);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -53,6 +55,6 @@
 
         #endregion
 
-        private SignUp signUp1;
+        private SIGNIN signin1;
     }
 }

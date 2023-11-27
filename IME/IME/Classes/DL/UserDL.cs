@@ -13,6 +13,10 @@ namespace IME.Classes.DL
     {
 
         public static List<USERS> users = new List<USERS>();
+
+        public static string SignINAdminName = "";
+        public static string SignInAdminPassword = "";
+        public static int adminID = 0;
         public static bool emailChecker(string Email)
         {
             var con = Configuration.getInstance().getConnection();
