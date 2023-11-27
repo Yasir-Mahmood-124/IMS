@@ -64,6 +64,26 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges30 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges31 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges32 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges33 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges34 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges35 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges36 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges37 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges38 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges39 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges40 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges41 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges42 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges43 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges44 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges45 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges46 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges47 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges48 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges49 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             tabPage2 = new TabPage();
             tableLayoutPanel4 = new TableLayoutPanel();
             teacherGV = new DataGridView();
@@ -108,6 +128,72 @@
             label1 = new Label();
             tableLayoutPanel11 = new TableLayoutPanel();
             add_course = new Guna.UI2.WinForms.Guna2Button();
+            viewbutton = new Button();
+            deletebtn = new Button();
+            updatecoursebutton = new Button();
+            tableLayoutPanel12 = new TableLayoutPanel();
+            activeStatus = new Guna.UI2.WinForms.Guna2ComboBox();
+            label2 = new Label();
+            vew_inbutton = new Button();
+            courseGV = new DataGridView();
+            feetab = new TabPage();
+            tableLayoutPanel13 = new TableLayoutPanel();
+            tableLayoutPanel14 = new TableLayoutPanel();
+            feestudentGV = new DataGridView();
+            feeCourseGV = new DataGridView();
+            tableLayoutPanel15 = new TableLayoutPanel();
+            label4 = new Label();
+            label3 = new Label();
+            courseIdbox = new Guna.UI2.WinForms.Guna2ComboBox();
+            studentIdbox = new Guna.UI2.WinForms.Guna2ComboBox();
+            tableLayoutPanel16 = new TableLayoutPanel();
+            amountbox = new Guna.UI2.WinForms.Guna2TextBox();
+            label5 = new Label();
+            DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            label6 = new Label();
+            tableLayoutPanel17 = new TableLayoutPanel();
+            tableLayoutPanel18 = new TableLayoutPanel();
+            feebutton = new Button();
+            view_feebutton = new Button();
+            updatefeebutton = new Button();
+            feeGV = new DataGridView();
+            salarytab = new TabPage();
+            tableLayoutPanel19 = new TableLayoutPanel();
+            tableLayoutPanel20 = new TableLayoutPanel();
+            teachersalaryGV = new DataGridView();
+            tableLayoutPanel21 = new TableLayoutPanel();
+            tableLayoutPanel22 = new TableLayoutPanel();
+            label8 = new Label();
+            teacherIdbox = new Guna.UI2.WinForms.Guna2ComboBox();
+            label7 = new Label();
+            salarybox = new Guna.UI2.WinForms.Guna2TextBox();
+            tableLayoutPanel23 = new TableLayoutPanel();
+            salarydate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            label9 = new Label();
+            tableLayoutPanel24 = new TableLayoutPanel();
+            tableLayoutPanel25 = new TableLayoutPanel();
+            addsbutton = new Button();
+            viewsalarybutton = new Button();
+            updatesalarybutton = new Button();
+            addedSalaryGV = new DataGridView();
+            chattab = new TabPage();
+            chat_tab = new Guna.UI2.WinForms.Guna2TabControl();
+            tabPage4 = new TabPage();
+            tableLayoutPanel26 = new TableLayoutPanel();
+            studentmessageGV = new DataGridView();
+            tableLayoutPanel27 = new TableLayoutPanel();
+            tableLayoutPanel28 = new TableLayoutPanel();
+            tableLayoutPanel29 = new TableLayoutPanel();
+            studentmsgId = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            tableLayoutPanel30 = new TableLayoutPanel();
+            guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            sendmsgbox = new Guna.UI2.WinForms.Guna2TextBox();
+            tableLayoutPanel31 = new TableLayoutPanel();
+            sendmsgbutton = new Button();
+            viewmsgbutton = new Button();
+            textBox1 = new TextBox();
+            tabPage5 = new TabPage();
             tabPage2.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)teacherGV).BeginInit();
@@ -128,6 +214,38 @@
             tableLayoutPanel9.SuspendLayout();
             tableLayoutPanel10.SuspendLayout();
             tableLayoutPanel11.SuspendLayout();
+            tableLayoutPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)courseGV).BeginInit();
+            feetab.SuspendLayout();
+            tableLayoutPanel13.SuspendLayout();
+            tableLayoutPanel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)feestudentGV).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)feeCourseGV).BeginInit();
+            tableLayoutPanel15.SuspendLayout();
+            tableLayoutPanel16.SuspendLayout();
+            tableLayoutPanel17.SuspendLayout();
+            tableLayoutPanel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)feeGV).BeginInit();
+            salarytab.SuspendLayout();
+            tableLayoutPanel19.SuspendLayout();
+            tableLayoutPanel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)teachersalaryGV).BeginInit();
+            tableLayoutPanel21.SuspendLayout();
+            tableLayoutPanel22.SuspendLayout();
+            tableLayoutPanel23.SuspendLayout();
+            tableLayoutPanel24.SuspendLayout();
+            tableLayoutPanel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)addedSalaryGV).BeginInit();
+            chattab.SuspendLayout();
+            chat_tab.SuspendLayout();
+            tabPage4.SuspendLayout();
+            tableLayoutPanel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)studentmessageGV).BeginInit();
+            tableLayoutPanel27.SuspendLayout();
+            tableLayoutPanel28.SuspendLayout();
+            tableLayoutPanel29.SuspendLayout();
+            tableLayoutPanel30.SuspendLayout();
+            tableLayoutPanel31.SuspendLayout();
             SuspendLayout();
             // 
             // tabPage2
@@ -157,6 +275,7 @@
             // 
             // teacherGV
             // 
+            teacherGV.AllowUserToAddRows = false;
             teacherGV.BackgroundColor = Color.FromArgb(224, 224, 224);
             teacherGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             teacherGV.Dock = DockStyle.Fill;
@@ -271,6 +390,9 @@
             add_student.Controls.Add(tabPage1);
             add_student.Controls.Add(tabPage2);
             add_student.Controls.Add(coursetab);
+            add_student.Controls.Add(feetab);
+            add_student.Controls.Add(salarytab);
+            add_student.Controls.Add(chattab);
             add_student.Dock = DockStyle.Fill;
             add_student.ItemSize = new Size(180, 40);
             add_student.Location = new Point(0, 0);
@@ -596,6 +718,7 @@
             // 
             // studentGV
             // 
+            studentGV.AllowUserToAddRows = false;
             studentGV.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = Color.FromArgb(250, 237, 183);
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -808,6 +931,7 @@
             tableLayoutPanel9.ColumnCount = 1;
             tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel9.Controls.Add(tableLayoutPanel10, 0, 0);
+            tableLayoutPanel9.Controls.Add(courseGV, 0, 1);
             tableLayoutPanel9.Dock = DockStyle.Fill;
             tableLayoutPanel9.Location = new Point(3, 3);
             tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -825,6 +949,7 @@
             tableLayoutPanel10.Controls.Add(nametext, 1, 0);
             tableLayoutPanel10.Controls.Add(label1, 0, 0);
             tableLayoutPanel10.Controls.Add(tableLayoutPanel11, 0, 1);
+            tableLayoutPanel10.Controls.Add(tableLayoutPanel12, 1, 1);
             tableLayoutPanel10.Dock = DockStyle.Fill;
             tableLayoutPanel10.Location = new Point(3, 3);
             tableLayoutPanel10.Name = "tableLayoutPanel10";
@@ -873,6 +998,9 @@
             tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel11.Controls.Add(add_course, 0, 0);
+            tableLayoutPanel11.Controls.Add(viewbutton, 1, 0);
+            tableLayoutPanel11.Controls.Add(deletebtn, 0, 1);
+            tableLayoutPanel11.Controls.Add(updatecoursebutton, 1, 1);
             tableLayoutPanel11.Dock = DockStyle.Fill;
             tableLayoutPanel11.Location = new Point(3, 99);
             tableLayoutPanel11.Name = "tableLayoutPanel11";
@@ -900,6 +1028,985 @@
             add_course.TabIndex = 0;
             add_course.Text = "Add Course";
             add_course.Click += add_course_Click;
+            // 
+            // viewbutton
+            // 
+            viewbutton.BackColor = Color.FromArgb(128, 255, 128);
+            viewbutton.Dock = DockStyle.Fill;
+            viewbutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            viewbutton.ForeColor = Color.White;
+            viewbutton.Location = new Point(298, 3);
+            viewbutton.Name = "viewbutton";
+            viewbutton.Size = new Size(290, 39);
+            viewbutton.TabIndex = 1;
+            viewbutton.Text = "View All Course";
+            viewbutton.UseVisualStyleBackColor = false;
+            viewbutton.Click += viewbutton_Click;
+            // 
+            // deletebtn
+            // 
+            deletebtn.BackColor = Color.FromArgb(128, 255, 128);
+            deletebtn.Dock = DockStyle.Fill;
+            deletebtn.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            deletebtn.ForeColor = Color.White;
+            deletebtn.Location = new Point(3, 48);
+            deletebtn.Name = "deletebtn";
+            deletebtn.Size = new Size(289, 39);
+            deletebtn.TabIndex = 2;
+            deletebtn.Text = "Delete Course";
+            deletebtn.UseVisualStyleBackColor = false;
+            deletebtn.Click += deletebtn_Click;
+            // 
+            // updatecoursebutton
+            // 
+            updatecoursebutton.BackColor = Color.FromArgb(128, 255, 128);
+            updatecoursebutton.Dock = DockStyle.Fill;
+            updatecoursebutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            updatecoursebutton.ForeColor = Color.White;
+            updatecoursebutton.Location = new Point(298, 48);
+            updatecoursebutton.Name = "updatecoursebutton";
+            updatecoursebutton.Size = new Size(290, 39);
+            updatecoursebutton.TabIndex = 3;
+            updatecoursebutton.Text = "Update Course";
+            updatecoursebutton.UseVisualStyleBackColor = false;
+            updatecoursebutton.Click += updatecoursebutton_Click;
+            // 
+            // tableLayoutPanel12
+            // 
+            tableLayoutPanel12.ColumnCount = 2;
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel12.Controls.Add(activeStatus, 1, 0);
+            tableLayoutPanel12.Controls.Add(label2, 0, 0);
+            tableLayoutPanel12.Controls.Add(vew_inbutton, 1, 1);
+            tableLayoutPanel12.Dock = DockStyle.Fill;
+            tableLayoutPanel12.Location = new Point(600, 99);
+            tableLayoutPanel12.Name = "tableLayoutPanel12";
+            tableLayoutPanel12.RowCount = 2;
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel12.Size = new Size(591, 90);
+            tableLayoutPanel12.TabIndex = 3;
+            // 
+            // activeStatus
+            // 
+            activeStatus.BackColor = Color.Transparent;
+            activeStatus.CustomizableEdges = customizableEdges33;
+            activeStatus.DrawMode = DrawMode.OwnerDrawFixed;
+            activeStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            activeStatus.FocusedColor = Color.FromArgb(94, 148, 255);
+            activeStatus.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            activeStatus.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            activeStatus.ForeColor = Color.FromArgb(68, 88, 112);
+            activeStatus.ItemHeight = 30;
+            activeStatus.Items.AddRange(new object[] { "0", "1" });
+            activeStatus.Location = new Point(298, 3);
+            activeStatus.Name = "activeStatus";
+            activeStatus.ShadowDecoration.CustomizableEdges = customizableEdges34;
+            activeStatus.Size = new Size(210, 36);
+            activeStatus.TabIndex = 4;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(97, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(195, 26);
+            label2.TabIndex = 5;
+            label2.Text = "In-Active Courses";
+            // 
+            // vew_inbutton
+            // 
+            vew_inbutton.BackColor = Color.FromArgb(128, 255, 128);
+            vew_inbutton.Dock = DockStyle.Fill;
+            vew_inbutton.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            vew_inbutton.ForeColor = Color.White;
+            vew_inbutton.Location = new Point(298, 48);
+            vew_inbutton.Name = "vew_inbutton";
+            vew_inbutton.Size = new Size(290, 39);
+            vew_inbutton.TabIndex = 6;
+            vew_inbutton.Text = "View In-Active Courses";
+            vew_inbutton.UseVisualStyleBackColor = false;
+            vew_inbutton.Click += vew_inbutton_Click;
+            // 
+            // courseGV
+            // 
+            courseGV.AllowUserToAddRows = false;
+            courseGV.BackgroundColor = Color.FromArgb(224, 224, 224);
+            courseGV.BorderStyle = BorderStyle.Fixed3D;
+            courseGV.CellBorderStyle = DataGridViewCellBorderStyle.Sunken;
+            courseGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            courseGV.Dock = DockStyle.Fill;
+            courseGV.Location = new Point(3, 201);
+            courseGV.Name = "courseGV";
+            courseGV.RowHeadersWidth = 62;
+            courseGV.RowTemplate.Height = 33;
+            courseGV.Size = new Size(1194, 192);
+            courseGV.TabIndex = 1;
+            // 
+            // feetab
+            // 
+            feetab.Controls.Add(tableLayoutPanel13);
+            feetab.Location = new Point(184, 4);
+            feetab.Name = "feetab";
+            feetab.Size = new Size(1212, 810);
+            feetab.TabIndex = 5;
+            feetab.Text = "Fee Management";
+            feetab.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel13
+            // 
+            tableLayoutPanel13.ColumnCount = 1;
+            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel13.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel13.Controls.Add(tableLayoutPanel14, 0, 0);
+            tableLayoutPanel13.Controls.Add(tableLayoutPanel17, 0, 1);
+            tableLayoutPanel13.Dock = DockStyle.Fill;
+            tableLayoutPanel13.Location = new Point(0, 0);
+            tableLayoutPanel13.Name = "tableLayoutPanel13";
+            tableLayoutPanel13.RowCount = 2;
+            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 60.6172829F));
+            tableLayoutPanel13.RowStyles.Add(new RowStyle(SizeType.Percent, 39.3827171F));
+            tableLayoutPanel13.Size = new Size(1212, 810);
+            tableLayoutPanel13.TabIndex = 0;
+            // 
+            // tableLayoutPanel14
+            // 
+            tableLayoutPanel14.ColumnCount = 2;
+            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.Controls.Add(feestudentGV, 0, 0);
+            tableLayoutPanel14.Controls.Add(feeCourseGV, 1, 0);
+            tableLayoutPanel14.Controls.Add(tableLayoutPanel15, 0, 1);
+            tableLayoutPanel14.Controls.Add(tableLayoutPanel16, 1, 1);
+            tableLayoutPanel14.Dock = DockStyle.Fill;
+            tableLayoutPanel14.Location = new Point(3, 3);
+            tableLayoutPanel14.Name = "tableLayoutPanel14";
+            tableLayoutPanel14.RowCount = 2;
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel14.Size = new Size(1206, 485);
+            tableLayoutPanel14.TabIndex = 0;
+            // 
+            // feestudentGV
+            // 
+            feestudentGV.AllowUserToAddRows = false;
+            feestudentGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            feestudentGV.Dock = DockStyle.Fill;
+            feestudentGV.Location = new Point(3, 3);
+            feestudentGV.Name = "feestudentGV";
+            feestudentGV.ReadOnly = true;
+            feestudentGV.RowHeadersWidth = 62;
+            feestudentGV.RowTemplate.Height = 33;
+            feestudentGV.Size = new Size(597, 236);
+            feestudentGV.TabIndex = 0;
+            // 
+            // feeCourseGV
+            // 
+            feeCourseGV.AllowUserToAddRows = false;
+            feeCourseGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            feeCourseGV.Dock = DockStyle.Fill;
+            feeCourseGV.Location = new Point(606, 3);
+            feeCourseGV.Name = "feeCourseGV";
+            feeCourseGV.RowHeadersWidth = 62;
+            feeCourseGV.RowTemplate.Height = 33;
+            feeCourseGV.Size = new Size(597, 236);
+            feeCourseGV.TabIndex = 1;
+            // 
+            // tableLayoutPanel15
+            // 
+            tableLayoutPanel15.ColumnCount = 2;
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.Controls.Add(label4, 0, 1);
+            tableLayoutPanel15.Controls.Add(label3, 0, 0);
+            tableLayoutPanel15.Controls.Add(courseIdbox, 1, 0);
+            tableLayoutPanel15.Controls.Add(studentIdbox, 1, 1);
+            tableLayoutPanel15.Dock = DockStyle.Fill;
+            tableLayoutPanel15.Location = new Point(3, 245);
+            tableLayoutPanel15.Name = "tableLayoutPanel15";
+            tableLayoutPanel15.RowCount = 2;
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel15.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tableLayoutPanel15.Size = new Size(597, 237);
+            tableLayoutPanel15.TabIndex = 2;
+            // 
+            // label4
+            // 
+            label4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label4.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(3, 161);
+            label4.Name = "label4";
+            label4.Size = new Size(292, 32);
+            label4.TabIndex = 3;
+            label4.Text = "Student Id";
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(3, 43);
+            label3.Name = "label3";
+            label3.Size = new Size(292, 32);
+            label3.TabIndex = 1;
+            label3.Text = "Course Id";
+            // 
+            // courseIdbox
+            // 
+            courseIdbox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            courseIdbox.BackColor = Color.Transparent;
+            courseIdbox.CustomizableEdges = customizableEdges35;
+            courseIdbox.DrawMode = DrawMode.OwnerDrawFixed;
+            courseIdbox.DropDownStyle = ComboBoxStyle.DropDownList;
+            courseIdbox.FocusedColor = Color.FromArgb(94, 148, 255);
+            courseIdbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            courseIdbox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            courseIdbox.ForeColor = Color.FromArgb(68, 88, 112);
+            courseIdbox.ItemHeight = 30;
+            courseIdbox.Location = new Point(301, 41);
+            courseIdbox.Name = "courseIdbox";
+            courseIdbox.ShadowDecoration.CustomizableEdges = customizableEdges36;
+            courseIdbox.Size = new Size(293, 36);
+            courseIdbox.TabIndex = 4;
+            // 
+            // studentIdbox
+            // 
+            studentIdbox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            studentIdbox.BackColor = Color.Transparent;
+            studentIdbox.CustomizableEdges = customizableEdges37;
+            studentIdbox.DrawMode = DrawMode.OwnerDrawFixed;
+            studentIdbox.DropDownStyle = ComboBoxStyle.DropDownList;
+            studentIdbox.FocusedColor = Color.FromArgb(94, 148, 255);
+            studentIdbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            studentIdbox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            studentIdbox.ForeColor = Color.FromArgb(68, 88, 112);
+            studentIdbox.ItemHeight = 30;
+            studentIdbox.Location = new Point(301, 159);
+            studentIdbox.Name = "studentIdbox";
+            studentIdbox.ShadowDecoration.CustomizableEdges = customizableEdges38;
+            studentIdbox.Size = new Size(293, 36);
+            studentIdbox.TabIndex = 5;
+            // 
+            // tableLayoutPanel16
+            // 
+            tableLayoutPanel16.ColumnCount = 2;
+            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel16.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel16.Controls.Add(amountbox, 1, 0);
+            tableLayoutPanel16.Controls.Add(label5, 0, 0);
+            tableLayoutPanel16.Controls.Add(DateTimePicker1, 1, 1);
+            tableLayoutPanel16.Controls.Add(label6, 0, 1);
+            tableLayoutPanel16.Dock = DockStyle.Fill;
+            tableLayoutPanel16.Location = new Point(606, 245);
+            tableLayoutPanel16.Name = "tableLayoutPanel16";
+            tableLayoutPanel16.RowCount = 2;
+            tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel16.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel16.Size = new Size(597, 237);
+            tableLayoutPanel16.TabIndex = 3;
+            // 
+            // amountbox
+            // 
+            amountbox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            amountbox.CustomizableEdges = customizableEdges39;
+            amountbox.DefaultText = "";
+            amountbox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            amountbox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            amountbox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            amountbox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            amountbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            amountbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            amountbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            amountbox.Location = new Point(301, 32);
+            amountbox.Name = "amountbox";
+            amountbox.PasswordChar = '\0';
+            amountbox.PlaceholderText = "Course Fee";
+            amountbox.SelectedText = "";
+            amountbox.ShadowDecoration.CustomizableEdges = customizableEdges40;
+            amountbox.Size = new Size(293, 54);
+            amountbox.TabIndex = 0;
+            amountbox.Validating += amountbox_Validating;
+            // 
+            // label5
+            // 
+            label5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label5.AutoSize = true;
+            label5.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(3, 43);
+            label5.Name = "label5";
+            label5.Size = new Size(292, 32);
+            label5.TabIndex = 1;
+            label5.Text = "Course Fee";
+            // 
+            // DateTimePicker1
+            // 
+            DateTimePicker1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            DateTimePicker1.Checked = true;
+            DateTimePicker1.CustomizableEdges = customizableEdges41;
+            DateTimePicker1.FillColor = Color.FromArgb(224, 224, 224);
+            DateTimePicker1.Font = new Font("Times New Roman", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            DateTimePicker1.Format = DateTimePickerFormat.Long;
+            DateTimePicker1.Location = new Point(301, 150);
+            DateTimePicker1.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            DateTimePicker1.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            DateTimePicker1.Name = "DateTimePicker1";
+            DateTimePicker1.ShadowDecoration.CustomizableEdges = customizableEdges42;
+            DateTimePicker1.Size = new Size(293, 54);
+            DateTimePicker1.TabIndex = 2;
+            DateTimePicker1.Value = new DateTime(2023, 11, 27, 18, 48, 13, 345);
+            // 
+            // label6
+            // 
+            label6.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label6.AutoSize = true;
+            label6.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(3, 161);
+            label6.Name = "label6";
+            label6.Size = new Size(292, 32);
+            label6.TabIndex = 3;
+            label6.Text = "Due Date";
+            // 
+            // tableLayoutPanel17
+            // 
+            tableLayoutPanel17.ColumnCount = 1;
+            tableLayoutPanel17.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel17.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel17.Controls.Add(tableLayoutPanel18, 0, 0);
+            tableLayoutPanel17.Controls.Add(feeGV, 0, 1);
+            tableLayoutPanel17.Dock = DockStyle.Fill;
+            tableLayoutPanel17.Location = new Point(3, 494);
+            tableLayoutPanel17.Name = "tableLayoutPanel17";
+            tableLayoutPanel17.RowCount = 2;
+            tableLayoutPanel17.RowStyles.Add(new RowStyle(SizeType.Percent, 29.392971F));
+            tableLayoutPanel17.RowStyles.Add(new RowStyle(SizeType.Percent, 70.6070251F));
+            tableLayoutPanel17.Size = new Size(1206, 313);
+            tableLayoutPanel17.TabIndex = 1;
+            // 
+            // tableLayoutPanel18
+            // 
+            tableLayoutPanel18.ColumnCount = 4;
+            tableLayoutPanel18.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel18.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel18.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel18.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel18.Controls.Add(feebutton, 0, 0);
+            tableLayoutPanel18.Controls.Add(view_feebutton, 1, 0);
+            tableLayoutPanel18.Controls.Add(updatefeebutton, 2, 0);
+            tableLayoutPanel18.Dock = DockStyle.Fill;
+            tableLayoutPanel18.Location = new Point(3, 3);
+            tableLayoutPanel18.Name = "tableLayoutPanel18";
+            tableLayoutPanel18.RowCount = 1;
+            tableLayoutPanel18.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel18.Size = new Size(1200, 86);
+            tableLayoutPanel18.TabIndex = 0;
+            // 
+            // feebutton
+            // 
+            feebutton.BackColor = Color.FromArgb(128, 255, 128);
+            feebutton.Dock = DockStyle.Fill;
+            feebutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            feebutton.ForeColor = Color.White;
+            feebutton.Location = new Point(3, 3);
+            feebutton.Name = "feebutton";
+            feebutton.Size = new Size(294, 80);
+            feebutton.TabIndex = 0;
+            feebutton.Text = "Add Fee";
+            feebutton.UseVisualStyleBackColor = false;
+            feebutton.Click += feebutton_Click;
+            // 
+            // view_feebutton
+            // 
+            view_feebutton.BackColor = Color.FromArgb(128, 255, 128);
+            view_feebutton.Dock = DockStyle.Fill;
+            view_feebutton.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            view_feebutton.ForeColor = Color.White;
+            view_feebutton.Location = new Point(303, 3);
+            view_feebutton.Name = "view_feebutton";
+            view_feebutton.Size = new Size(294, 80);
+            view_feebutton.TabIndex = 1;
+            view_feebutton.Text = "View Details";
+            view_feebutton.UseVisualStyleBackColor = false;
+            view_feebutton.Click += view_feebutton_Click;
+            // 
+            // updatefeebutton
+            // 
+            updatefeebutton.BackColor = Color.FromArgb(128, 255, 128);
+            updatefeebutton.Dock = DockStyle.Fill;
+            updatefeebutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            updatefeebutton.ForeColor = Color.White;
+            updatefeebutton.Location = new Point(603, 3);
+            updatefeebutton.Name = "updatefeebutton";
+            updatefeebutton.Size = new Size(294, 80);
+            updatefeebutton.TabIndex = 2;
+            updatefeebutton.Text = "Update Fee ";
+            updatefeebutton.UseVisualStyleBackColor = false;
+            updatefeebutton.Click += updatefeebutton_Click;
+            // 
+            // feeGV
+            // 
+            feeGV.AllowUserToAddRows = false;
+            feeGV.BackgroundColor = Color.FromArgb(224, 224, 224);
+            feeGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            feeGV.Dock = DockStyle.Fill;
+            feeGV.Location = new Point(3, 95);
+            feeGV.Name = "feeGV";
+            feeGV.RowHeadersWidth = 62;
+            feeGV.RowTemplate.Height = 33;
+            feeGV.Size = new Size(1200, 215);
+            feeGV.TabIndex = 1;
+            // 
+            // salarytab
+            // 
+            salarytab.Controls.Add(tableLayoutPanel19);
+            salarytab.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            salarytab.Location = new Point(184, 4);
+            salarytab.Name = "salarytab";
+            salarytab.Size = new Size(1212, 810);
+            salarytab.TabIndex = 6;
+            salarytab.Text = "Salary Management";
+            salarytab.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel19
+            // 
+            tableLayoutPanel19.ColumnCount = 1;
+            tableLayoutPanel19.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel19.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel19.Controls.Add(tableLayoutPanel20, 0, 0);
+            tableLayoutPanel19.Controls.Add(tableLayoutPanel24, 0, 1);
+            tableLayoutPanel19.Dock = DockStyle.Fill;
+            tableLayoutPanel19.Location = new Point(0, 0);
+            tableLayoutPanel19.Name = "tableLayoutPanel19";
+            tableLayoutPanel19.RowCount = 2;
+            tableLayoutPanel19.RowStyles.Add(new RowStyle(SizeType.Percent, 56.17284F));
+            tableLayoutPanel19.RowStyles.Add(new RowStyle(SizeType.Percent, 43.82716F));
+            tableLayoutPanel19.Size = new Size(1212, 810);
+            tableLayoutPanel19.TabIndex = 0;
+            // 
+            // tableLayoutPanel20
+            // 
+            tableLayoutPanel20.ColumnCount = 1;
+            tableLayoutPanel20.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel20.Controls.Add(teachersalaryGV, 0, 0);
+            tableLayoutPanel20.Controls.Add(tableLayoutPanel21, 0, 1);
+            tableLayoutPanel20.Dock = DockStyle.Fill;
+            tableLayoutPanel20.Location = new Point(3, 3);
+            tableLayoutPanel20.Name = "tableLayoutPanel20";
+            tableLayoutPanel20.RowCount = 2;
+            tableLayoutPanel20.RowStyles.Add(new RowStyle(SizeType.Percent, 46.5478859F));
+            tableLayoutPanel20.RowStyles.Add(new RowStyle(SizeType.Percent, 53.4521141F));
+            tableLayoutPanel20.Size = new Size(1206, 449);
+            tableLayoutPanel20.TabIndex = 1;
+            // 
+            // teachersalaryGV
+            // 
+            teachersalaryGV.AllowUserToAddRows = false;
+            teachersalaryGV.BackgroundColor = Color.FromArgb(224, 224, 224);
+            teachersalaryGV.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            teachersalaryGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            teachersalaryGV.Dock = DockStyle.Fill;
+            teachersalaryGV.Location = new Point(3, 3);
+            teachersalaryGV.Name = "teachersalaryGV";
+            teachersalaryGV.RowHeadersWidth = 62;
+            teachersalaryGV.RowTemplate.Height = 33;
+            teachersalaryGV.Size = new Size(1200, 203);
+            teachersalaryGV.TabIndex = 0;
+            // 
+            // tableLayoutPanel21
+            // 
+            tableLayoutPanel21.ColumnCount = 2;
+            tableLayoutPanel21.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel21.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel21.Controls.Add(tableLayoutPanel22, 0, 0);
+            tableLayoutPanel21.Controls.Add(tableLayoutPanel23, 1, 0);
+            tableLayoutPanel21.Dock = DockStyle.Fill;
+            tableLayoutPanel21.Location = new Point(3, 212);
+            tableLayoutPanel21.Name = "tableLayoutPanel21";
+            tableLayoutPanel21.RowCount = 1;
+            tableLayoutPanel21.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel21.Size = new Size(1200, 234);
+            tableLayoutPanel21.TabIndex = 1;
+            // 
+            // tableLayoutPanel22
+            // 
+            tableLayoutPanel22.ColumnCount = 2;
+            tableLayoutPanel22.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel22.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel22.Controls.Add(label8, 0, 1);
+            tableLayoutPanel22.Controls.Add(teacherIdbox, 1, 0);
+            tableLayoutPanel22.Controls.Add(label7, 0, 0);
+            tableLayoutPanel22.Controls.Add(salarybox, 1, 1);
+            tableLayoutPanel22.Dock = DockStyle.Fill;
+            tableLayoutPanel22.Location = new Point(3, 3);
+            tableLayoutPanel22.Name = "tableLayoutPanel22";
+            tableLayoutPanel22.RowCount = 2;
+            tableLayoutPanel22.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel22.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel22.Size = new Size(594, 228);
+            tableLayoutPanel22.TabIndex = 0;
+            // 
+            // label8
+            // 
+            label8.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label8.AutoSize = true;
+            label8.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(3, 155);
+            label8.Name = "label8";
+            label8.Size = new Size(291, 32);
+            label8.TabIndex = 3;
+            label8.Text = "Salary Amount";
+            // 
+            // teacherIdbox
+            // 
+            teacherIdbox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            teacherIdbox.BackColor = Color.Transparent;
+            teacherIdbox.CustomizableEdges = customizableEdges43;
+            teacherIdbox.DrawMode = DrawMode.OwnerDrawFixed;
+            teacherIdbox.DropDownStyle = ComboBoxStyle.DropDownList;
+            teacherIdbox.FocusedColor = Color.FromArgb(94, 148, 255);
+            teacherIdbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            teacherIdbox.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            teacherIdbox.ForeColor = Color.FromArgb(68, 88, 112);
+            teacherIdbox.ItemHeight = 30;
+            teacherIdbox.Location = new Point(300, 39);
+            teacherIdbox.Name = "teacherIdbox";
+            teacherIdbox.ShadowDecoration.CustomizableEdges = customizableEdges44;
+            teacherIdbox.Size = new Size(291, 36);
+            teacherIdbox.TabIndex = 0;
+            // 
+            // label7
+            // 
+            label7.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label7.AutoSize = true;
+            label7.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(3, 41);
+            label7.Name = "label7";
+            label7.Size = new Size(291, 32);
+            label7.TabIndex = 1;
+            label7.Text = "Teacher ID";
+            // 
+            // salarybox
+            // 
+            salarybox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            salarybox.CustomizableEdges = customizableEdges45;
+            salarybox.DefaultText = "";
+            salarybox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            salarybox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            salarybox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            salarybox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            salarybox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            salarybox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            salarybox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            salarybox.Location = new Point(300, 144);
+            salarybox.Name = "salarybox";
+            salarybox.PasswordChar = '\0';
+            salarybox.PlaceholderText = "";
+            salarybox.SelectedText = "";
+            salarybox.ShadowDecoration.CustomizableEdges = customizableEdges46;
+            salarybox.Size = new Size(291, 54);
+            salarybox.TabIndex = 2;
+            salarybox.Validating += salarybox_Validating;
+            // 
+            // tableLayoutPanel23
+            // 
+            tableLayoutPanel23.ColumnCount = 2;
+            tableLayoutPanel23.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel23.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel23.Controls.Add(salarydate, 1, 0);
+            tableLayoutPanel23.Controls.Add(label9, 0, 0);
+            tableLayoutPanel23.Dock = DockStyle.Fill;
+            tableLayoutPanel23.Location = new Point(603, 3);
+            tableLayoutPanel23.Name = "tableLayoutPanel23";
+            tableLayoutPanel23.RowCount = 2;
+            tableLayoutPanel23.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel23.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel23.Size = new Size(594, 228);
+            tableLayoutPanel23.TabIndex = 1;
+            // 
+            // salarydate
+            // 
+            salarydate.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            salarydate.Checked = true;
+            salarydate.CustomizableEdges = customizableEdges47;
+            salarydate.FillColor = Color.FromArgb(224, 224, 224);
+            salarydate.Font = new Font("Times New Roman", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            salarydate.Format = DateTimePickerFormat.Long;
+            salarydate.Location = new Point(300, 30);
+            salarydate.MaxDate = new DateTime(9998, 12, 31, 0, 0, 0, 0);
+            salarydate.MinDate = new DateTime(1753, 1, 1, 0, 0, 0, 0);
+            salarydate.Name = "salarydate";
+            salarydate.ShadowDecoration.CustomizableEdges = customizableEdges48;
+            salarydate.Size = new Size(291, 54);
+            salarydate.TabIndex = 0;
+            salarydate.Value = new DateTime(2023, 11, 27, 20, 17, 15, 588);
+            // 
+            // label9
+            // 
+            label9.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label9.AutoSize = true;
+            label9.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(3, 41);
+            label9.Name = "label9";
+            label9.Size = new Size(291, 32);
+            label9.TabIndex = 1;
+            label9.Text = "Date";
+            // 
+            // tableLayoutPanel24
+            // 
+            tableLayoutPanel24.ColumnCount = 1;
+            tableLayoutPanel24.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel24.Controls.Add(tableLayoutPanel25, 0, 0);
+            tableLayoutPanel24.Controls.Add(addedSalaryGV, 0, 1);
+            tableLayoutPanel24.Dock = DockStyle.Fill;
+            tableLayoutPanel24.Location = new Point(3, 458);
+            tableLayoutPanel24.Name = "tableLayoutPanel24";
+            tableLayoutPanel24.RowCount = 2;
+            tableLayoutPanel24.RowStyles.Add(new RowStyle(SizeType.Percent, 35.81662F));
+            tableLayoutPanel24.RowStyles.Add(new RowStyle(SizeType.Percent, 64.18338F));
+            tableLayoutPanel24.Size = new Size(1206, 349);
+            tableLayoutPanel24.TabIndex = 2;
+            // 
+            // tableLayoutPanel25
+            // 
+            tableLayoutPanel25.ColumnCount = 4;
+            tableLayoutPanel25.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel25.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel25.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel25.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel25.Controls.Add(addsbutton, 0, 0);
+            tableLayoutPanel25.Controls.Add(viewsalarybutton, 1, 0);
+            tableLayoutPanel25.Controls.Add(updatesalarybutton, 2, 0);
+            tableLayoutPanel25.Dock = DockStyle.Fill;
+            tableLayoutPanel25.Location = new Point(3, 3);
+            tableLayoutPanel25.Name = "tableLayoutPanel25";
+            tableLayoutPanel25.RowCount = 1;
+            tableLayoutPanel25.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel25.Size = new Size(1200, 119);
+            tableLayoutPanel25.TabIndex = 0;
+            // 
+            // addsbutton
+            // 
+            addsbutton.BackColor = Color.FromArgb(128, 255, 128);
+            addsbutton.Dock = DockStyle.Fill;
+            addsbutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            addsbutton.ForeColor = Color.White;
+            addsbutton.Location = new Point(3, 3);
+            addsbutton.Name = "addsbutton";
+            addsbutton.Size = new Size(294, 113);
+            addsbutton.TabIndex = 0;
+            addsbutton.Text = "Add Salary";
+            addsbutton.UseVisualStyleBackColor = false;
+            addsbutton.Click += addsbutton_Click;
+            // 
+            // viewsalarybutton
+            // 
+            viewsalarybutton.BackColor = Color.FromArgb(128, 255, 128);
+            viewsalarybutton.Dock = DockStyle.Fill;
+            viewsalarybutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            viewsalarybutton.ForeColor = Color.White;
+            viewsalarybutton.Location = new Point(303, 3);
+            viewsalarybutton.Name = "viewsalarybutton";
+            viewsalarybutton.Size = new Size(294, 113);
+            viewsalarybutton.TabIndex = 1;
+            viewsalarybutton.Text = "View Details";
+            viewsalarybutton.UseVisualStyleBackColor = false;
+            viewsalarybutton.Click += viewsalarybutton_Click;
+            // 
+            // updatesalarybutton
+            // 
+            updatesalarybutton.BackColor = Color.FromArgb(128, 255, 128);
+            updatesalarybutton.Dock = DockStyle.Fill;
+            updatesalarybutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            updatesalarybutton.ForeColor = Color.White;
+            updatesalarybutton.Location = new Point(603, 3);
+            updatesalarybutton.Name = "updatesalarybutton";
+            updatesalarybutton.Size = new Size(294, 113);
+            updatesalarybutton.TabIndex = 2;
+            updatesalarybutton.Text = "Update Details";
+            updatesalarybutton.UseVisualStyleBackColor = false;
+            updatesalarybutton.Click += updatesalarybutton_Click;
+            // 
+            // addedSalaryGV
+            // 
+            addedSalaryGV.AllowUserToAddRows = false;
+            addedSalaryGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            addedSalaryGV.Dock = DockStyle.Fill;
+            addedSalaryGV.Location = new Point(3, 128);
+            addedSalaryGV.Name = "addedSalaryGV";
+            addedSalaryGV.RowHeadersWidth = 62;
+            addedSalaryGV.RowTemplate.Height = 33;
+            addedSalaryGV.Size = new Size(1200, 218);
+            addedSalaryGV.TabIndex = 1;
+            // 
+            // chattab
+            // 
+            chattab.Controls.Add(chat_tab);
+            chattab.Location = new Point(184, 4);
+            chattab.Name = "chattab";
+            chattab.Size = new Size(1212, 810);
+            chattab.TabIndex = 7;
+            chattab.Text = "Chat";
+            chattab.UseVisualStyleBackColor = true;
+            // 
+            // chat_tab
+            // 
+            chat_tab.Alignment = TabAlignment.Left;
+            chat_tab.Controls.Add(tabPage4);
+            chat_tab.Controls.Add(tabPage5);
+            chat_tab.Dock = DockStyle.Fill;
+            chat_tab.ItemSize = new Size(180, 40);
+            chat_tab.Location = new Point(0, 0);
+            chat_tab.Name = "chat_tab";
+            chat_tab.Padding = new Point(6, 6);
+            chat_tab.SelectedIndex = 0;
+            chat_tab.Size = new Size(1212, 810);
+            chat_tab.TabButtonHoverState.BorderColor = Color.Empty;
+            chat_tab.TabButtonHoverState.FillColor = Color.FromArgb(40, 52, 70);
+            chat_tab.TabButtonHoverState.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            chat_tab.TabButtonHoverState.ForeColor = Color.White;
+            chat_tab.TabButtonHoverState.InnerColor = Color.FromArgb(40, 52, 70);
+            chat_tab.TabButtonIdleState.BorderColor = Color.Empty;
+            chat_tab.TabButtonIdleState.FillColor = Color.FromArgb(33, 42, 57);
+            chat_tab.TabButtonIdleState.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            chat_tab.TabButtonIdleState.ForeColor = Color.FromArgb(156, 160, 167);
+            chat_tab.TabButtonIdleState.InnerColor = Color.FromArgb(33, 42, 57);
+            chat_tab.TabButtonSelectedState.BorderColor = Color.Empty;
+            chat_tab.TabButtonSelectedState.FillColor = Color.FromArgb(29, 37, 49);
+            chat_tab.TabButtonSelectedState.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            chat_tab.TabButtonSelectedState.ForeColor = Color.White;
+            chat_tab.TabButtonSelectedState.InnerColor = Color.FromArgb(76, 132, 255);
+            chat_tab.TabButtonSize = new Size(180, 40);
+            chat_tab.TabIndex = 0;
+            chat_tab.TabMenuBackColor = Color.FromArgb(224, 224, 224);
+            chat_tab.SelectedIndexChanged += chat_tab_SelectedIndexChanged;
+            // 
+            // tabPage4
+            // 
+            tabPage4.BorderStyle = BorderStyle.FixedSingle;
+            tabPage4.Controls.Add(tableLayoutPanel26);
+            tabPage4.Location = new Point(184, 4);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Padding = new Padding(3);
+            tabPage4.Size = new Size(1024, 802);
+            tabPage4.TabIndex = 0;
+            tabPage4.Text = "Sent Chat to Student";
+            tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel26
+            // 
+            tableLayoutPanel26.ColumnCount = 1;
+            tableLayoutPanel26.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel26.Controls.Add(studentmessageGV, 0, 0);
+            tableLayoutPanel26.Controls.Add(tableLayoutPanel27, 0, 1);
+            tableLayoutPanel26.Dock = DockStyle.Fill;
+            tableLayoutPanel26.Location = new Point(3, 3);
+            tableLayoutPanel26.Name = "tableLayoutPanel26";
+            tableLayoutPanel26.RowCount = 2;
+            tableLayoutPanel26.RowStyles.Add(new RowStyle(SizeType.Percent, 30.8564224F));
+            tableLayoutPanel26.RowStyles.Add(new RowStyle(SizeType.Percent, 69.14358F));
+            tableLayoutPanel26.Size = new Size(1016, 794);
+            tableLayoutPanel26.TabIndex = 0;
+            // 
+            // studentmessageGV
+            // 
+            studentmessageGV.AllowUserToAddRows = false;
+            studentmessageGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            studentmessageGV.Dock = DockStyle.Fill;
+            studentmessageGV.Location = new Point(3, 3);
+            studentmessageGV.Name = "studentmessageGV";
+            studentmessageGV.RowHeadersWidth = 62;
+            studentmessageGV.RowTemplate.Height = 33;
+            studentmessageGV.Size = new Size(1010, 239);
+            studentmessageGV.TabIndex = 0;
+            // 
+            // tableLayoutPanel27
+            // 
+            tableLayoutPanel27.ColumnCount = 1;
+            tableLayoutPanel27.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel27.Controls.Add(tableLayoutPanel28, 0, 0);
+            tableLayoutPanel27.Controls.Add(textBox1, 0, 1);
+            tableLayoutPanel27.Dock = DockStyle.Fill;
+            tableLayoutPanel27.Location = new Point(3, 248);
+            tableLayoutPanel27.Name = "tableLayoutPanel27";
+            tableLayoutPanel27.RowCount = 2;
+            tableLayoutPanel27.RowStyles.Add(new RowStyle(SizeType.Percent, 41.6206245F));
+            tableLayoutPanel27.RowStyles.Add(new RowStyle(SizeType.Percent, 58.3793755F));
+            tableLayoutPanel27.Size = new Size(1010, 543);
+            tableLayoutPanel27.TabIndex = 1;
+            // 
+            // tableLayoutPanel28
+            // 
+            tableLayoutPanel28.ColumnCount = 2;
+            tableLayoutPanel28.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel28.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel28.Controls.Add(tableLayoutPanel29, 0, 0);
+            tableLayoutPanel28.Controls.Add(tableLayoutPanel30, 0, 1);
+            tableLayoutPanel28.Controls.Add(tableLayoutPanel31, 1, 0);
+            tableLayoutPanel28.Dock = DockStyle.Fill;
+            tableLayoutPanel28.Location = new Point(3, 3);
+            tableLayoutPanel28.Name = "tableLayoutPanel28";
+            tableLayoutPanel28.RowCount = 2;
+            tableLayoutPanel28.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel28.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel28.Size = new Size(1004, 220);
+            tableLayoutPanel28.TabIndex = 0;
+            // 
+            // tableLayoutPanel29
+            // 
+            tableLayoutPanel29.ColumnCount = 2;
+            tableLayoutPanel29.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel29.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel29.Controls.Add(studentmsgId, 1, 0);
+            tableLayoutPanel29.Controls.Add(guna2HtmlLabel8, 0, 0);
+            tableLayoutPanel29.Dock = DockStyle.Fill;
+            tableLayoutPanel29.Location = new Point(3, 3);
+            tableLayoutPanel29.Name = "tableLayoutPanel29";
+            tableLayoutPanel29.RowCount = 1;
+            tableLayoutPanel29.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel29.Size = new Size(496, 104);
+            tableLayoutPanel29.TabIndex = 0;
+            // 
+            // studentmsgId
+            // 
+            studentmsgId.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            studentmsgId.BackColor = Color.Transparent;
+            studentmsgId.CustomizableEdges = customizableEdges49;
+            studentmsgId.DrawMode = DrawMode.OwnerDrawFixed;
+            studentmsgId.DropDownStyle = ComboBoxStyle.DropDownList;
+            studentmsgId.FocusedColor = Color.FromArgb(94, 148, 255);
+            studentmsgId.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            studentmsgId.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            studentmsgId.ForeColor = Color.FromArgb(68, 88, 112);
+            studentmsgId.ItemHeight = 30;
+            studentmsgId.Location = new Point(251, 34);
+            studentmsgId.Name = "studentmsgId";
+            studentmsgId.ShadowDecoration.CustomizableEdges = customizableEdges50;
+            studentmsgId.Size = new Size(242, 36);
+            studentmsgId.TabIndex = 0;
+            // 
+            // guna2HtmlLabel8
+            // 
+            guna2HtmlLabel8.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            guna2HtmlLabel8.BackColor = Color.Transparent;
+            guna2HtmlLabel8.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel8.Location = new Point(3, 35);
+            guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            guna2HtmlLabel8.Size = new Size(130, 34);
+            guna2HtmlLabel8.TabIndex = 1;
+            guna2HtmlLabel8.Text = "Student Id";
+            // 
+            // tableLayoutPanel30
+            // 
+            tableLayoutPanel30.ColumnCount = 2;
+            tableLayoutPanel30.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel30.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel30.Controls.Add(guna2HtmlLabel9, 0, 0);
+            tableLayoutPanel30.Controls.Add(sendmsgbox, 1, 0);
+            tableLayoutPanel30.Dock = DockStyle.Fill;
+            tableLayoutPanel30.Location = new Point(3, 113);
+            tableLayoutPanel30.Name = "tableLayoutPanel30";
+            tableLayoutPanel30.RowCount = 1;
+            tableLayoutPanel30.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel30.Size = new Size(496, 104);
+            tableLayoutPanel30.TabIndex = 1;
+            // 
+            // guna2HtmlLabel9
+            // 
+            guna2HtmlLabel9.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            guna2HtmlLabel9.BackColor = Color.Transparent;
+            guna2HtmlLabel9.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel9.Location = new Point(3, 35);
+            guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            guna2HtmlLabel9.Size = new Size(103, 34);
+            guna2HtmlLabel9.TabIndex = 2;
+            guna2HtmlLabel9.Text = "Message";
+            // 
+            // sendmsgbox
+            // 
+            sendmsgbox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            sendmsgbox.CustomizableEdges = customizableEdges51;
+            sendmsgbox.DefaultText = "";
+            sendmsgbox.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            sendmsgbox.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            sendmsgbox.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            sendmsgbox.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            sendmsgbox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            sendmsgbox.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            sendmsgbox.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            sendmsgbox.Location = new Point(251, 25);
+            sendmsgbox.Name = "sendmsgbox";
+            sendmsgbox.PasswordChar = '\0';
+            sendmsgbox.PlaceholderText = "Message";
+            sendmsgbox.SelectedText = "";
+            sendmsgbox.ShadowDecoration.CustomizableEdges = customizableEdges52;
+            sendmsgbox.Size = new Size(242, 54);
+            sendmsgbox.TabIndex = 0;
+            // 
+            // tableLayoutPanel31
+            // 
+            tableLayoutPanel31.ColumnCount = 2;
+            tableLayoutPanel31.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel31.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel31.Controls.Add(sendmsgbutton, 0, 0);
+            tableLayoutPanel31.Controls.Add(viewmsgbutton, 1, 0);
+            tableLayoutPanel31.Dock = DockStyle.Fill;
+            tableLayoutPanel31.Location = new Point(505, 3);
+            tableLayoutPanel31.Name = "tableLayoutPanel31";
+            tableLayoutPanel31.RowCount = 2;
+            tableLayoutPanel31.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel31.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel31.Size = new Size(496, 104);
+            tableLayoutPanel31.TabIndex = 2;
+            // 
+            // sendmsgbutton
+            // 
+            sendmsgbutton.BackColor = Color.FromArgb(128, 255, 128);
+            sendmsgbutton.Dock = DockStyle.Fill;
+            sendmsgbutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            sendmsgbutton.ForeColor = Color.White;
+            sendmsgbutton.Location = new Point(3, 3);
+            sendmsgbutton.Name = "sendmsgbutton";
+            sendmsgbutton.Size = new Size(242, 46);
+            sendmsgbutton.TabIndex = 0;
+            sendmsgbutton.Text = "Send Message";
+            sendmsgbutton.UseVisualStyleBackColor = false;
+            sendmsgbutton.Click += sendmsgbutton_Click;
+            // 
+            // viewmsgbutton
+            // 
+            viewmsgbutton.BackColor = Color.FromArgb(128, 255, 128);
+            viewmsgbutton.Dock = DockStyle.Fill;
+            viewmsgbutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            viewmsgbutton.ForeColor = Color.White;
+            viewmsgbutton.Location = new Point(251, 3);
+            viewmsgbutton.Name = "viewmsgbutton";
+            viewmsgbutton.Size = new Size(242, 46);
+            viewmsgbutton.TabIndex = 1;
+            viewmsgbutton.Text = "View Messages";
+            viewmsgbutton.UseVisualStyleBackColor = false;
+            viewmsgbutton.Click += viewmsgbutton_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Dock = DockStyle.Fill;
+            textBox1.Location = new Point(3, 229);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(1004, 311);
+            textBox1.TabIndex = 1;
+            // 
+            // tabPage5
+            // 
+            tabPage5.Location = new Point(184, 4);
+            tabPage5.Name = "tabPage5";
+            tabPage5.Padding = new Padding(3);
+            tabPage5.Size = new Size(1024, 802);
+            tabPage5.TabIndex = 1;
+            tabPage5.Text = "tabPage5";
+            tabPage5.UseVisualStyleBackColor = true;
             // 
             // Admin
             // 
@@ -934,6 +2041,46 @@
             tableLayoutPanel10.ResumeLayout(false);
             tableLayoutPanel10.PerformLayout();
             tableLayoutPanel11.ResumeLayout(false);
+            tableLayoutPanel12.ResumeLayout(false);
+            tableLayoutPanel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)courseGV).EndInit();
+            feetab.ResumeLayout(false);
+            tableLayoutPanel13.ResumeLayout(false);
+            tableLayoutPanel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)feestudentGV).EndInit();
+            ((System.ComponentModel.ISupportInitialize)feeCourseGV).EndInit();
+            tableLayoutPanel15.ResumeLayout(false);
+            tableLayoutPanel15.PerformLayout();
+            tableLayoutPanel16.ResumeLayout(false);
+            tableLayoutPanel16.PerformLayout();
+            tableLayoutPanel17.ResumeLayout(false);
+            tableLayoutPanel18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)feeGV).EndInit();
+            salarytab.ResumeLayout(false);
+            tableLayoutPanel19.ResumeLayout(false);
+            tableLayoutPanel20.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)teachersalaryGV).EndInit();
+            tableLayoutPanel21.ResumeLayout(false);
+            tableLayoutPanel22.ResumeLayout(false);
+            tableLayoutPanel22.PerformLayout();
+            tableLayoutPanel23.ResumeLayout(false);
+            tableLayoutPanel23.PerformLayout();
+            tableLayoutPanel24.ResumeLayout(false);
+            tableLayoutPanel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)addedSalaryGV).EndInit();
+            chattab.ResumeLayout(false);
+            chat_tab.ResumeLayout(false);
+            tabPage4.ResumeLayout(false);
+            tableLayoutPanel26.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)studentmessageGV).EndInit();
+            tableLayoutPanel27.ResumeLayout(false);
+            tableLayoutPanel27.PerformLayout();
+            tableLayoutPanel28.ResumeLayout(false);
+            tableLayoutPanel29.ResumeLayout(false);
+            tableLayoutPanel29.PerformLayout();
+            tableLayoutPanel30.ResumeLayout(false);
+            tableLayoutPanel30.PerformLayout();
+            tableLayoutPanel31.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -983,5 +2130,71 @@
         private Label label1;
         private TableLayoutPanel tableLayoutPanel11;
         private Guna.UI2.WinForms.Guna2Button add_course;
+        private Button viewbutton;
+        private DataGridView courseGV;
+        private Button deletebtn;
+        private Button updatecoursebutton;
+        private TableLayoutPanel tableLayoutPanel12;
+        private Guna.UI2.WinForms.Guna2ComboBox activeStatus;
+        private Label label2;
+        private Button vew_inbutton;
+        private TabPage feetab;
+        private TableLayoutPanel tableLayoutPanel13;
+        private TableLayoutPanel tableLayoutPanel14;
+        private DataGridView feestudentGV;
+        private DataGridView feeCourseGV;
+        private TableLayoutPanel tableLayoutPanel15;
+        private Label label3;
+        private TableLayoutPanel tableLayoutPanel16;
+        private Label label4;
+        private Guna.UI2.WinForms.Guna2ComboBox courseIdbox;
+        private Guna.UI2.WinForms.Guna2ComboBox studentIdbox;
+        private Guna.UI2.WinForms.Guna2TextBox amountbox;
+        private Label label5;
+        private Guna.UI2.WinForms.Guna2DateTimePicker DateTimePicker1;
+        private Label label6;
+        private TableLayoutPanel tableLayoutPanel17;
+        private TableLayoutPanel tableLayoutPanel18;
+        private Button feebutton;
+        private Button view_feebutton;
+        private DataGridView feeGV;
+        private Button updatefeebutton;
+        private TabPage salarytab;
+        private TableLayoutPanel tableLayoutPanel19;
+        private TableLayoutPanel tableLayoutPanel20;
+        private DataGridView teachersalaryGV;
+        private TableLayoutPanel tableLayoutPanel21;
+        private TableLayoutPanel tableLayoutPanel22;
+        private TableLayoutPanel tableLayoutPanel23;
+        private Label label8;
+        private Guna.UI2.WinForms.Guna2ComboBox teacherIdbox;
+        private Label label7;
+        private Guna.UI2.WinForms.Guna2TextBox salarybox;
+        private Guna.UI2.WinForms.Guna2DateTimePicker salarydate;
+        private Label label9;
+        private TableLayoutPanel tableLayoutPanel24;
+        private TableLayoutPanel tableLayoutPanel25;
+        private Button addsbutton;
+        private Button viewsalarybutton;
+        private DataGridView addedSalaryGV;
+        private Button updatesalarybutton;
+        private TabPage chattab;
+        private Guna.UI2.WinForms.Guna2TabControl chat_tab;
+        private TabPage tabPage4;
+        private TabPage tabPage5;
+        private TableLayoutPanel tableLayoutPanel26;
+        private DataGridView studentmessageGV;
+        private TableLayoutPanel tableLayoutPanel27;
+        private TableLayoutPanel tableLayoutPanel28;
+        private TableLayoutPanel tableLayoutPanel29;
+        private Guna.UI2.WinForms.Guna2ComboBox studentmsgId;
+        private TableLayoutPanel tableLayoutPanel30;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2TextBox sendmsgbox;
+        private TableLayoutPanel tableLayoutPanel31;
+        private Button sendmsgbutton;
+        private TextBox textBox1;
+        private Button viewmsgbutton;
     }
 }
