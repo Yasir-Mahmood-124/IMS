@@ -202,14 +202,11 @@ namespace IME
             if (studentGV.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = studentGV.SelectedRows[0];
-                //selectedRow.Cells["student_id"].ReadOnly = true;
-
                 int studentId = Convert.ToInt32(selectedRow.Cells["student_id"].Value); // Replace "StudentId" with the name of your ID column
                 string updatedUserName = selectedRow.Cells["username"].Value.ToString(); // Replace "Name" with the name of your column
                 string updatedFullName = selectedRow.Cells["full_name"].Value.ToString(); // Replace "Name" with the name of your column
                 string updatedEmail = selectedRow.Cells["email"].Value.ToString(); // Replace "Name" with the name of your column
                 string updatedPhoneNumber = selectedRow.Cells["phone_number"].Value.ToString(); // Replace "Name" with the name of your column
-
                 UpdateStudent(studentId, updatedUserName, updatedFullName, updatedEmail, updatedPhoneNumber);
             }
             else

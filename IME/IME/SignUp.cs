@@ -24,7 +24,7 @@ namespace IME
 
         private void emailBox_Validating(object sender, CancelEventArgs e)
         {
-            string emailPattern = @"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$";
+            string emailPattern = @"^[\w-\.]+@([\w-]+\.)+com$";
             if (!Regex.IsMatch(emailBox.Text, emailPattern))
             {
                 e.Cancel = true;
