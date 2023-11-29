@@ -31,3 +31,4 @@ E:\S5\SE_PROJECT\IME\IME\obj\Debug\net6.0-windows\IME.SIGNIN.resources
 E:\S5\SE_PROJECT\IME\IME\obj\Debug\net6.0-windows\IME.AdminPanel.resources
 E:\S5\SE_PROJECT\IME\IME\obj\Debug\net6.0-windows\IME.Admin.resources
 E:\S5\SE_PROJECT\IME\IME\obj\Debug\net6.0-windows\IME.StudentPanel.resources
+E:\S5\SE_PROJECT\IME\IME\obj\Debug\net6.0-windows\IME.TeacherPanel.resources

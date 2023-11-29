@@ -76,17 +76,41 @@ namespace IME
                 }
                 else if (usertype.Text.ToLower() == "teacher")
                 {
+
                     var con = Configuration.getInstance().getConnection();
                     SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Teachers WHERE username = @username AND password = @password", con);
 
-                    // Use parameters to prevent SQL injection
                     cmd.Parameters.AddWithValue("@username", userName);
                     cmd.Parameters.AddWithValue("@password", password);
                     int userExists = (int)cmd.ExecuteScalar();
 
                     if (userExists > 0)
                     {
+                        UserDL.SignINAdminName = userName;
+                        UserDL.SignInAdminPassword = password;
+                        SqlCommand cmd1 = new SqlCommand("SELECT * FROM Teachers WHERE username = @username", con);
+                        cmd1.Parameters.AddWithValue("@username", UserDL.SignINAdminName);
+                        try
+                        {
+                            using (SqlDataReader reader = cmd1.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    if (reader["username"].ToString() == UserDL.SignINAdminName)
+                                    {
+                                        UserDL.adminID = int.Parse(reader["teacher_id"].ToString());
+                                    }
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("An error occurred: " + ex.Message);
+                        }
                         MessageBox.Show("You're logged in!");
+                        TeacherPanel teacher = new TeacherPanel();
+                        this.Controls.Clear();
+                        this.Controls.Add(teacher);
                     }
                     else
                     {
@@ -98,7 +122,7 @@ namespace IME
                     var con = Configuration.getInstance().getConnection();
                     SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM admins WHERE username = @username AND password = @password", con);
 
-                    // Use parameters to prevent SQL injection
+                    
                     cmd.Parameters.AddWithValue("@username", userName);
                     cmd.Parameters.AddWithValue("@password", password);
                     int userExists = (int)cmd.ExecuteScalar();

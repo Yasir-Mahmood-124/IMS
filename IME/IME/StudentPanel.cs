@@ -288,7 +288,32 @@ namespace IME
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                var con = Configuration.getInstance().getConnection();
+                SqlCommand cmd = new SqlCommand(@"select c.course_id,c.course_name,cm.material_name from register_courses rc inner join 
+                                    Students s on rc.student_id = s.student_id
+                                    inner join Courses c on c.course_id = rc.course_id
+                                    inner join CourseMaterials cm on cm.course_id = c.course_id
+                                    where c.active = 1 and rc.active = 1 and s.active = 1 and cm.active = 1
+                                    and s.student_id = @student_id", con);
+                cmd.Parameters.AddWithValue("@student_id", UserDL.adminID);
+                DataTable dataTable = new DataTable();
+                using (SqlDataReader reader1 = cmd.ExecuteReader())
+                {
+                    dataTable.Load(reader1);
+                }
 
+                courseMGV.DataSource = dataTable;
+                courseMGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                courseMGV.ColumnHeadersVisible = true;
+                courseMGV.RowHeadersVisible = true;
+                courseMGV.DefaultCellStyle.Padding = new Padding(0, 0, 0, 0);
+            }
+            catch (Exception c)
+            {
+                MessageBox.Show(c.Message);
+            }
         }
     }
 }

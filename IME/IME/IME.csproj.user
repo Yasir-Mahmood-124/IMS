@@ -19,5 +19,8 @@
     <Compile Update="StudentPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="TeacherPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
