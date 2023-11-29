@@ -307,7 +307,7 @@ namespace IME
                 feestudentGV.RowHeadersVisible = true;
                 feestudentGV.DefaultCellStyle.Padding = new Padding(0, 0, 0, 0);
 
-                cmd = new SqlCommand("SELECT  * from courses where active  = 1", con);
+                cmd = new SqlCommand("SELECT  * from register_courses where active  = 1", con);
                 dataTable = new DataTable();
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
@@ -319,7 +319,7 @@ namespace IME
 
                 foreach (DataRow row in dataTable.Rows)
                 {
-                    int value = int.Parse(row["course_id"].ToString()); // The corresponding value
+                    int value = int.Parse(row["course_id"].ToString()); 
                     courseIdbox.Items.Add(value);
                 }
 
@@ -621,7 +621,6 @@ namespace IME
             var con = Configuration.getInstance().getConnection();
             SqlCommand cmd = new SqlCommand("UPDATE Courses SET course_name = @course_name ,active = @active WHERE course_id = @course_id", con);
 
-
             cmd.Parameters.AddWithValue("@course_id", studentId);
             cmd.Parameters.AddWithValue("@course_name", updatedUserName);
             cmd.Parameters.AddWithValue("@active", updatedCourseStatus);
@@ -639,6 +638,7 @@ namespace IME
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
                 dataTable.Load(reader);
+                reader.Close();
             }
             courseGV.DataSource = dataTable;
             courseGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
@@ -649,7 +649,8 @@ namespace IME
 
         private void feebutton_Click(object sender, EventArgs e)
         {
-            if (courseIdbox.Text != null && studentIdbox.Text != null && amountbox.Text != "")
+            
+            if (!string.IsNullOrEmpty(courseIdbox.Text) && !string.IsNullOrEmpty(studentIdbox.Text) != null && amountbox.Text != "")
             {
                 int courseId = int.Parse(courseIdbox.Text);
                 int studentId = int.Parse(studentIdbox.Text);
@@ -689,6 +690,7 @@ namespace IME
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
                 dataTable.Load(reader);
+                reader.Close();
             }
 
             feeGV.DataSource = dataTable;
@@ -709,6 +711,7 @@ namespace IME
                 int updatedCourseName = int.Parse(selectedRow.Cells["student_id"].Value.ToString()); // Replace "Name" with the name of your column
                 float updatedCourseStatus = float.Parse(selectedRow.Cells["amount"].Value.ToString());
                 DateTime date = DateTime.Parse(DateTimePicker1.Text);
+                selectedRow.Cells["fee_id"].ReadOnly = true;
                 int feeId = int.Parse(selectedRow.Cells["fee_id"].Value.ToString());
 
 
@@ -776,6 +779,7 @@ namespace IME
             using (SqlDataReader reader = cmd.ExecuteReader())
             {
                 dataTable.Load(reader);
+                reader.Close();
             }
 
             addedSalaryGV.DataSource = dataTable;
@@ -825,6 +829,7 @@ namespace IME
             if (addedSalaryGV.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = addedSalaryGV.SelectedRows[0];
+                selectedRow.Cells["salary_id"].ReadOnly = true;
                 int salaryId = Convert.ToInt32(selectedRow.Cells["salary_id"].Value); // Replace "StudentId" with the name of your ID column
                 float updatedAmount = float.Parse(selectedRow.Cells["amount"].Value.ToString());
                 DateTime date = DateTime.Parse(DateTimePicker1.Text);
@@ -862,6 +867,7 @@ namespace IME
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     dataTable.Load(reader);
+                    reader.Close();
                 }
 
                 studentmsgId.Items.Clear();
@@ -876,6 +882,30 @@ namespace IME
                 studentmessageGV.ColumnHeadersVisible = true;
                 studentmessageGV.RowHeadersVisible = true;
                 studentmessageGV.DefaultCellStyle.Padding = new Padding(0, 0, 0, 0);
+            }
+            if (chat_tab.SelectedTab == tabPage5)
+            {
+                var con = Configuration.getInstance().getConnection();
+                SqlCommand cmd = new SqlCommand("SELECT  * from Teachers where active  = 1", con);
+                DataTable dataTable = new DataTable();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    dataTable.Load(reader);
+                    reader.Close();
+                }
+
+                teacherboxId.Items.Clear();
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    int value = int.Parse(row["teacher_id"].ToString()); // The corresponding value
+                    teacherboxId.Items.Add(value);
+                }
+
+                teacherchatGV.DataSource = dataTable;
+                teacherchatGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                teacherchatGV.ColumnHeadersVisible = true;
+                teacherchatGV.RowHeadersVisible = true;
+                teacherchatGV.DefaultCellStyle.Padding = new Padding(0, 0, 0, 0);
             }
 
         }
@@ -917,16 +947,15 @@ namespace IME
                 SqlCommand cmd = new SqlCommand("SELECT  message from Alerts where student_id = @student_id", con);
                 cmd.Parameters.AddWithValue("@student_id", int.Parse(studentmsgId.Text));
                 StringBuilder messages = new StringBuilder();
-
                 try
                 {
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            // Assuming the 'message' column is of type string
+
                             string message = reader["message"].ToString();
-                            messages.AppendLine(message); // Add each message to the StringBuilder
+                            messages.AppendLine(message);
                         }
                     }
                 }
@@ -937,6 +966,66 @@ namespace IME
 
 
                 textBox1.Text = messages.ToString();
+
+            }
+        }
+
+        private void sendtmsgbutton_Click(object sender, EventArgs e)
+        {
+            var con = Configuration.getInstance().getConnection();
+            SqlCommand cmd = new SqlCommand("SELECT  admin_id from Admins where active  = 1", con);
+            int adminId = 0;
+            try
+            {
+                adminId = (int)cmd.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+            cmd.ExecuteNonQuery();
+            int teacherId = int.Parse(teacherboxId.Text);
+            SqlCommand cmd1 = new SqlCommand("Insert into Alerts values (@message,@send_date,@created_at,@updated_at,@active,@admin_id,@student_id, @teacher_id)", con);
+
+            cmd1.Parameters.AddWithValue("@message", messageteacher.Text);
+            cmd1.Parameters.AddWithValue("@send_date", DateTime.Now);
+            cmd1.Parameters.AddWithValue("@created_at", DateTime.Now);
+            cmd1.Parameters.AddWithValue("@updated_at", DateTime.Now);
+            cmd1.Parameters.AddWithValue("@active", 1);
+            cmd1.Parameters.AddWithValue("@admin_id", adminId);
+            cmd1.Parameters.AddWithValue("@student_id", DBNull.Value);
+            cmd1.Parameters.AddWithValue("@teacher_id", teacherId);
+            cmd1.ExecuteNonQuery();
+            MessageBox.Show("Message Send successfully");
+        }
+
+        private void viewtbutton_Click(object sender, EventArgs e)
+        {
+            if (teacherboxId.Text != null)
+            {
+                var con = Configuration.getInstance().getConnection();
+                SqlCommand cmd = new SqlCommand("SELECT  message from Alerts where teacher_id = @teacher_id", con);
+                cmd.Parameters.AddWithValue("@teacher_id", int.Parse(teacherboxId.Text));
+                StringBuilder messages = new StringBuilder();
+                try
+                {
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+
+                            string message = reader["message"].ToString();
+                            messages.AppendLine(message);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+
+
+                teachermsgBox.Text = messages.ToString();
 
             }
         }

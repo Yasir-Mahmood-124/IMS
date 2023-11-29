@@ -84,6 +84,10 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges50 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges51 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges52 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges53 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges54 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges55 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges56 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             tabPage2 = new TabPage();
             tableLayoutPanel4 = new TableLayoutPanel();
             teacherGV = new DataGridView();
@@ -194,6 +198,20 @@
             viewmsgbutton = new Button();
             textBox1 = new TextBox();
             tabPage5 = new TabPage();
+            tableLayoutPanel32 = new TableLayoutPanel();
+            teacherchatGV = new DataGridView();
+            tableLayoutPanel33 = new TableLayoutPanel();
+            tableLayoutPanel34 = new TableLayoutPanel();
+            tableLayoutPanel35 = new TableLayoutPanel();
+            teacherboxId = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            tableLayoutPanel36 = new TableLayoutPanel();
+            messageteacher = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            tableLayoutPanel37 = new TableLayoutPanel();
+            sendtmsgbutton = new Button();
+            viewtbutton = new Button();
+            teachermsgBox = new TextBox();
             tabPage2.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)teacherGV).BeginInit();
@@ -246,6 +264,14 @@
             tableLayoutPanel29.SuspendLayout();
             tableLayoutPanel30.SuspendLayout();
             tableLayoutPanel31.SuspendLayout();
+            tabPage5.SuspendLayout();
+            tableLayoutPanel32.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)teacherchatGV).BeginInit();
+            tableLayoutPanel33.SuspendLayout();
+            tableLayoutPanel34.SuspendLayout();
+            tableLayoutPanel35.SuspendLayout();
+            tableLayoutPanel36.SuspendLayout();
+            tableLayoutPanel37.SuspendLayout();
             SuspendLayout();
             // 
             // tabPage2
@@ -2000,13 +2026,222 @@
             // 
             // tabPage5
             // 
+            tabPage5.Controls.Add(tableLayoutPanel32);
             tabPage5.Location = new Point(184, 4);
             tabPage5.Name = "tabPage5";
             tabPage5.Padding = new Padding(3);
             tabPage5.Size = new Size(1024, 802);
             tabPage5.TabIndex = 1;
-            tabPage5.Text = "tabPage5";
+            tabPage5.Text = "Chat with Teacher";
             tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel32
+            // 
+            tableLayoutPanel32.ColumnCount = 1;
+            tableLayoutPanel32.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel32.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel32.Controls.Add(teacherchatGV, 0, 0);
+            tableLayoutPanel32.Controls.Add(tableLayoutPanel33, 0, 1);
+            tableLayoutPanel32.Dock = DockStyle.Fill;
+            tableLayoutPanel32.Location = new Point(3, 3);
+            tableLayoutPanel32.Name = "tableLayoutPanel32";
+            tableLayoutPanel32.RowCount = 2;
+            tableLayoutPanel32.RowStyles.Add(new RowStyle(SizeType.Percent, 33.9195976F));
+            tableLayoutPanel32.RowStyles.Add(new RowStyle(SizeType.Percent, 66.0804F));
+            tableLayoutPanel32.Size = new Size(1018, 796);
+            tableLayoutPanel32.TabIndex = 0;
+            // 
+            // teacherchatGV
+            // 
+            teacherchatGV.AllowUserToAddRows = false;
+            teacherchatGV.BackgroundColor = Color.FromArgb(224, 224, 224);
+            teacherchatGV.BorderStyle = BorderStyle.Fixed3D;
+            teacherchatGV.CellBorderStyle = DataGridViewCellBorderStyle.SingleVertical;
+            teacherchatGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            teacherchatGV.Dock = DockStyle.Fill;
+            teacherchatGV.Location = new Point(3, 3);
+            teacherchatGV.Name = "teacherchatGV";
+            teacherchatGV.RowHeadersWidth = 62;
+            teacherchatGV.RowTemplate.Height = 33;
+            teacherchatGV.Size = new Size(1012, 264);
+            teacherchatGV.TabIndex = 0;
+            // 
+            // tableLayoutPanel33
+            // 
+            tableLayoutPanel33.ColumnCount = 1;
+            tableLayoutPanel33.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel33.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel33.Controls.Add(tableLayoutPanel34, 0, 0);
+            tableLayoutPanel33.Controls.Add(teachermsgBox, 0, 1);
+            tableLayoutPanel33.Dock = DockStyle.Fill;
+            tableLayoutPanel33.Location = new Point(3, 273);
+            tableLayoutPanel33.Name = "tableLayoutPanel33";
+            tableLayoutPanel33.RowCount = 2;
+            tableLayoutPanel33.RowStyles.Add(new RowStyle(SizeType.Percent, 44.6153831F));
+            tableLayoutPanel33.RowStyles.Add(new RowStyle(SizeType.Percent, 55.3846169F));
+            tableLayoutPanel33.Size = new Size(1012, 520);
+            tableLayoutPanel33.TabIndex = 1;
+            // 
+            // tableLayoutPanel34
+            // 
+            tableLayoutPanel34.ColumnCount = 2;
+            tableLayoutPanel34.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel34.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel34.Controls.Add(tableLayoutPanel35, 0, 0);
+            tableLayoutPanel34.Controls.Add(tableLayoutPanel36, 0, 1);
+            tableLayoutPanel34.Controls.Add(tableLayoutPanel37, 1, 0);
+            tableLayoutPanel34.Dock = DockStyle.Fill;
+            tableLayoutPanel34.Location = new Point(3, 3);
+            tableLayoutPanel34.Name = "tableLayoutPanel34";
+            tableLayoutPanel34.RowCount = 2;
+            tableLayoutPanel34.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel34.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel34.Size = new Size(1006, 226);
+            tableLayoutPanel34.TabIndex = 0;
+            // 
+            // tableLayoutPanel35
+            // 
+            tableLayoutPanel35.ColumnCount = 2;
+            tableLayoutPanel35.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel35.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel35.Controls.Add(teacherboxId, 1, 0);
+            tableLayoutPanel35.Controls.Add(guna2HtmlLabel10, 0, 0);
+            tableLayoutPanel35.Dock = DockStyle.Fill;
+            tableLayoutPanel35.Location = new Point(3, 3);
+            tableLayoutPanel35.Name = "tableLayoutPanel35";
+            tableLayoutPanel35.RowCount = 1;
+            tableLayoutPanel35.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel35.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel35.Size = new Size(497, 107);
+            tableLayoutPanel35.TabIndex = 0;
+            // 
+            // teacherboxId
+            // 
+            teacherboxId.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            teacherboxId.BackColor = Color.Transparent;
+            teacherboxId.CustomizableEdges = customizableEdges53;
+            teacherboxId.DrawMode = DrawMode.OwnerDrawFixed;
+            teacherboxId.DropDownStyle = ComboBoxStyle.DropDownList;
+            teacherboxId.FocusedColor = Color.FromArgb(94, 148, 255);
+            teacherboxId.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            teacherboxId.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            teacherboxId.ForeColor = Color.FromArgb(68, 88, 112);
+            teacherboxId.ItemHeight = 30;
+            teacherboxId.Location = new Point(251, 35);
+            teacherboxId.Name = "teacherboxId";
+            teacherboxId.ShadowDecoration.CustomizableEdges = customizableEdges54;
+            teacherboxId.Size = new Size(243, 36);
+            teacherboxId.TabIndex = 0;
+            // 
+            // guna2HtmlLabel10
+            // 
+            guna2HtmlLabel10.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            guna2HtmlLabel10.BackColor = Color.FromArgb(224, 224, 224);
+            guna2HtmlLabel10.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel10.Location = new Point(3, 36);
+            guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            guna2HtmlLabel10.Size = new Size(132, 34);
+            guna2HtmlLabel10.TabIndex = 1;
+            guna2HtmlLabel10.Text = "Teacher Id";
+            // 
+            // tableLayoutPanel36
+            // 
+            tableLayoutPanel36.ColumnCount = 2;
+            tableLayoutPanel36.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel36.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel36.Controls.Add(messageteacher, 1, 0);
+            tableLayoutPanel36.Controls.Add(guna2HtmlLabel11, 0, 0);
+            tableLayoutPanel36.Dock = DockStyle.Fill;
+            tableLayoutPanel36.Location = new Point(3, 116);
+            tableLayoutPanel36.Name = "tableLayoutPanel36";
+            tableLayoutPanel36.RowCount = 1;
+            tableLayoutPanel36.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel36.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel36.Size = new Size(497, 107);
+            tableLayoutPanel36.TabIndex = 1;
+            // 
+            // messageteacher
+            // 
+            messageteacher.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            messageteacher.CustomizableEdges = customizableEdges55;
+            messageteacher.DefaultText = "";
+            messageteacher.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            messageteacher.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            messageteacher.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            messageteacher.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            messageteacher.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            messageteacher.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            messageteacher.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            messageteacher.Location = new Point(251, 26);
+            messageteacher.Name = "messageteacher";
+            messageteacher.PasswordChar = '\0';
+            messageteacher.PlaceholderText = "Write Message";
+            messageteacher.SelectedText = "";
+            messageteacher.ShadowDecoration.CustomizableEdges = customizableEdges56;
+            messageteacher.Size = new Size(243, 54);
+            messageteacher.TabIndex = 0;
+            // 
+            // guna2HtmlLabel11
+            // 
+            guna2HtmlLabel11.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            guna2HtmlLabel11.BackColor = Color.FromArgb(224, 224, 224);
+            guna2HtmlLabel11.Font = new Font("Times New Roman", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            guna2HtmlLabel11.Location = new Point(3, 34);
+            guna2HtmlLabel11.Name = "guna2HtmlLabel11";
+            guna2HtmlLabel11.Size = new Size(118, 38);
+            guna2HtmlLabel11.TabIndex = 1;
+            guna2HtmlLabel11.Text = "Message";
+            // 
+            // tableLayoutPanel37
+            // 
+            tableLayoutPanel37.ColumnCount = 2;
+            tableLayoutPanel37.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel37.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel37.Controls.Add(sendtmsgbutton, 0, 0);
+            tableLayoutPanel37.Controls.Add(viewtbutton, 1, 0);
+            tableLayoutPanel37.Dock = DockStyle.Fill;
+            tableLayoutPanel37.Location = new Point(506, 3);
+            tableLayoutPanel37.Name = "tableLayoutPanel37";
+            tableLayoutPanel37.RowCount = 2;
+            tableLayoutPanel37.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel37.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel37.Size = new Size(497, 107);
+            tableLayoutPanel37.TabIndex = 2;
+            // 
+            // sendtmsgbutton
+            // 
+            sendtmsgbutton.BackColor = Color.FromArgb(128, 255, 128);
+            sendtmsgbutton.Dock = DockStyle.Fill;
+            sendtmsgbutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            sendtmsgbutton.Location = new Point(3, 3);
+            sendtmsgbutton.Name = "sendtmsgbutton";
+            sendtmsgbutton.Size = new Size(242, 47);
+            sendtmsgbutton.TabIndex = 0;
+            sendtmsgbutton.Text = "Send Message";
+            sendtmsgbutton.UseVisualStyleBackColor = false;
+            sendtmsgbutton.Click += sendtmsgbutton_Click;
+            // 
+            // viewtbutton
+            // 
+            viewtbutton.BackColor = Color.FromArgb(128, 255, 128);
+            viewtbutton.Dock = DockStyle.Fill;
+            viewtbutton.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            viewtbutton.Location = new Point(251, 3);
+            viewtbutton.Name = "viewtbutton";
+            viewtbutton.Size = new Size(243, 47);
+            viewtbutton.TabIndex = 1;
+            viewtbutton.Text = "View Message";
+            viewtbutton.UseVisualStyleBackColor = false;
+            viewtbutton.Click += viewtbutton_Click;
+            // 
+            // teachermsgBox
+            // 
+            teachermsgBox.Dock = DockStyle.Fill;
+            teachermsgBox.Location = new Point(3, 235);
+            teachermsgBox.Multiline = true;
+            teachermsgBox.Name = "teachermsgBox";
+            teachermsgBox.Size = new Size(1006, 282);
+            teachermsgBox.TabIndex = 1;
             // 
             // Admin
             // 
@@ -2081,6 +2316,17 @@
             tableLayoutPanel30.ResumeLayout(false);
             tableLayoutPanel30.PerformLayout();
             tableLayoutPanel31.ResumeLayout(false);
+            tabPage5.ResumeLayout(false);
+            tableLayoutPanel32.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)teacherchatGV).EndInit();
+            tableLayoutPanel33.ResumeLayout(false);
+            tableLayoutPanel33.PerformLayout();
+            tableLayoutPanel34.ResumeLayout(false);
+            tableLayoutPanel35.ResumeLayout(false);
+            tableLayoutPanel35.PerformLayout();
+            tableLayoutPanel36.ResumeLayout(false);
+            tableLayoutPanel36.PerformLayout();
+            tableLayoutPanel37.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -2196,5 +2442,19 @@
         private Button sendmsgbutton;
         private TextBox textBox1;
         private Button viewmsgbutton;
+        private TableLayoutPanel tableLayoutPanel32;
+        private DataGridView teacherchatGV;
+        private TableLayoutPanel tableLayoutPanel33;
+        private TableLayoutPanel tableLayoutPanel34;
+        private TableLayoutPanel tableLayoutPanel35;
+        private TableLayoutPanel tableLayoutPanel36;
+        private TableLayoutPanel tableLayoutPanel37;
+        private Guna.UI2.WinForms.Guna2ComboBox teacherboxId;
+        private TextBox teachermsgBox;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private Guna.UI2.WinForms.Guna2TextBox messageteacher;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
+        private Button sendtmsgbutton;
+        private Button viewtbutton;
     }
 }
