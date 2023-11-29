@@ -202,6 +202,7 @@ namespace IME
             if (studentGV.SelectedRows.Count > 0)
             {
                 DataGridViewRow selectedRow = studentGV.SelectedRows[0];
+                //selectedRow.Cells["student_id"].ReadOnly = true;
 
                 int studentId = Convert.ToInt32(selectedRow.Cells["student_id"].Value); // Replace "StudentId" with the name of your ID column
                 string updatedUserName = selectedRow.Cells["username"].Value.ToString(); // Replace "Name" with the name of your column
@@ -221,14 +222,13 @@ namespace IME
         {
 
             var con = Configuration.getInstance().getConnection();
-            SqlCommand cmd = new SqlCommand("UPDATE Students SET username = @username ,full_name = @full_name,email=@email,phone_number = @phone_number WHERE student_id = @student_id", con);
-
-
+            SqlCommand cmd = new SqlCommand("UPDATE Students SET username = @username ,full_name = @full_name,email=@email,phone_number = @phone_number,updated_at=@updated_at WHERE student_id = @student_id", con);
             cmd.Parameters.AddWithValue("@student_id", studentId);
             cmd.Parameters.AddWithValue("@username", updatedUserName);
             cmd.Parameters.AddWithValue("@full_name", updatedFullName);
             cmd.Parameters.AddWithValue("@email", updatedEmail);
             cmd.Parameters.AddWithValue("@phone_number", updatedPhoneNumber);
+            cmd.Parameters.AddWithValue("@updated_at", DateTime.Now);
 
             cmd.ExecuteNonQuery();
 
