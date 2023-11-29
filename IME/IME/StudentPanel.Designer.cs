@@ -83,6 +83,7 @@
             label1 = new Label();
             button1 = new Button();
             courseMGV = new DataGridView();
+            tabPage1 = new TabPage();
             guna2TabControl1.SuspendLayout();
             coursetab.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
@@ -116,6 +117,7 @@
             guna2TabControl1.Controls.Add(messagetab);
             guna2TabControl1.Controls.Add(profiletab);
             guna2TabControl1.Controls.Add(matrialtab);
+            guna2TabControl1.Controls.Add(tabPage1);
             guna2TabControl1.Dock = DockStyle.Fill;
             guna2TabControl1.ItemSize = new Size(180, 40);
             guna2TabControl1.Location = new Point(0, 0);
@@ -704,6 +706,15 @@
             courseMGV.Size = new Size(703, 174);
             courseMGV.TabIndex = 1;
             // 
+            // tabPage1
+            // 
+            tabPage1.Location = new Point(184, 4);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Size = new Size(1035, 738);
+            tabPage1.TabIndex = 5;
+            tabPage1.Text = "Log Out";
+            tabPage1.UseVisualStyleBackColor = true;
+            // 
             // StudentPanel
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -781,5 +792,6 @@
         private Label label1;
         private Button button1;
         private DataGridView courseMGV;
+        private TabPage tabPage1;
     }
 }

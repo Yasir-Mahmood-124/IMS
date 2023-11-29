@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             pictureBox1 = new PictureBox();
             tableLayoutPanel1 = new TableLayoutPanel();
             tableLayoutPanel2 = new TableLayoutPanel();
@@ -39,6 +39,8 @@
             passwordbox = new TextBox();
             usertype = new Guna.UI2.WinForms.Guna2ComboBox();
             signUPbutton = new Guna.UI2.WinForms.Guna2CircleButton();
+            label2 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
@@ -82,6 +84,8 @@
             tableLayoutPanel2.Controls.Add(passwordbox, 1, 2);
             tableLayoutPanel2.Controls.Add(usertype, 1, 3);
             tableLayoutPanel2.Controls.Add(signUPbutton, 1, 4);
+            tableLayoutPanel2.Controls.Add(label2, 1, 5);
+            tableLayoutPanel2.Controls.Add(button1, 1, 6);
             tableLayoutPanel2.Dock = DockStyle.Fill;
             tableLayoutPanel2.Location = new Point(502, 3);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -135,7 +139,7 @@
             usertype.BackColor = Color.White;
             usertype.BorderColor = Color.Black;
             usertype.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
-            usertype.CustomizableEdges = customizableEdges4;
+            usertype.CustomizableEdges = customizableEdges10;
             usertype.DrawMode = DrawMode.OwnerDrawFixed;
             usertype.DropDownStyle = ComboBoxStyle.DropDownList;
             usertype.FocusedColor = Color.FromArgb(94, 148, 255);
@@ -146,7 +150,7 @@
             usertype.Items.AddRange(new object[] { "Teacher", "Student", "Admin" });
             usertype.Location = new Point(197, 311);
             usertype.Name = "usertype";
-            usertype.ShadowDecoration.CustomizableEdges = customizableEdges5;
+            usertype.ShadowDecoration.CustomizableEdges = customizableEdges11;
             usertype.Size = new Size(427, 36);
             usertype.TabIndex = 9;
             // 
@@ -165,12 +169,37 @@
             signUPbutton.Location = new Point(197, 379);
             signUPbutton.Name = "signUPbutton";
             signUPbutton.PressedColor = Color.FromArgb(128, 255, 128);
-            signUPbutton.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            signUPbutton.ShadowDecoration.CustomizableEdges = customizableEdges12;
             signUPbutton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             signUPbutton.Size = new Size(208, 88);
             signUPbutton.TabIndex = 8;
             signUPbutton.Text = "SIGN IN";
             signUPbutton.Click += signUPbutton_Click;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Left;
+            label2.AutoSize = true;
+            label2.Font = new Font("Times New Roman", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(255, 128, 128);
+            label2.Location = new Point(197, 492);
+            label2.Name = "label2";
+            label2.Size = new Size(383, 50);
+            label2.TabIndex = 10;
+            label2.Text = "If you don't have account then click on signup button";
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            button1.BackColor = Color.FromArgb(128, 255, 128);
+            button1.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(197, 567);
+            button1.Name = "button1";
+            button1.Size = new Size(214, 89);
+            button1.TabIndex = 11;
+            button1.Text = "Sign UP ";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // SIGNIN
             // 
@@ -196,5 +225,7 @@
         private TextBox userBox;
         private TextBox passwordbox;
         private Guna.UI2.WinForms.Guna2ComboBox usertype;
+        private Label label2;
+        private Button button1;
     }
 }

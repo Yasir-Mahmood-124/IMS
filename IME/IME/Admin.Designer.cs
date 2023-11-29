@@ -212,6 +212,7 @@
             sendtmsgbutton = new Button();
             viewtbutton = new Button();
             teachermsgBox = new TextBox();
+            tabPage6 = new TabPage();
             tabPage2.SuspendLayout();
             tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)teacherGV).BeginInit();
@@ -419,6 +420,7 @@
             add_student.Controls.Add(feetab);
             add_student.Controls.Add(salarytab);
             add_student.Controls.Add(chattab);
+            add_student.Controls.Add(tabPage6);
             add_student.Dock = DockStyle.Fill;
             add_student.ItemSize = new Size(180, 40);
             add_student.Location = new Point(0, 0);
@@ -2243,6 +2245,15 @@
             teachermsgBox.Size = new Size(1006, 282);
             teachermsgBox.TabIndex = 1;
             // 
+            // tabPage6
+            // 
+            tabPage6.Location = new Point(184, 4);
+            tabPage6.Name = "tabPage6";
+            tabPage6.Size = new Size(1212, 810);
+            tabPage6.TabIndex = 8;
+            tabPage6.Text = "Log Out";
+            tabPage6.UseVisualStyleBackColor = true;
+            // 
             // Admin
             // 
             AllowDrop = true;
@@ -2456,5 +2467,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
         private Button sendtmsgbutton;
         private Button viewtbutton;
+        private TabPage tabPage6;
     }
 }

@@ -22,18 +22,18 @@ namespace IME
 
         private void signUPbutton_Click(object sender, EventArgs e)
         {
-            if (userBox.Text != "" && passwordbox.Text != "" )
+            if (userBox.Text != "" && passwordbox.Text != "")
             {
                 string userName = userBox.Text;
                 string password = passwordbox.Text;
-                if(usertype.Text.ToLower() == "student")
+                if (usertype.Text.ToLower() == "student")
                 {
                     var con = Configuration.getInstance().getConnection();
                     SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Students WHERE username = @username AND password = @password", con);
 
                     cmd.Parameters.AddWithValue("@username", userName);
                     cmd.Parameters.AddWithValue("@password", password);
-                    
+
                     int userExists = (int)cmd.ExecuteScalar();
 
                     if (userExists > 0)
@@ -117,12 +117,12 @@ namespace IME
                         MessageBox.Show("Username or password is incorrect.");
                     }
                 }
-                else if(usertype.Text.ToLower() == "admin")
+                else if (usertype.Text.ToLower() == "admin")
                 {
                     var con = Configuration.getInstance().getConnection();
                     SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM admins WHERE username = @username AND password = @password", con);
 
-                    
+
                     cmd.Parameters.AddWithValue("@username", userName);
                     cmd.Parameters.AddWithValue("@password", password);
                     int userExists = (int)cmd.ExecuteScalar();
@@ -147,6 +147,13 @@ namespace IME
                     MessageBox.Show("please select correct type");
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SignUp admin = new SignUp();
+            this.Controls.Clear();
+            this.Controls.Add(admin);
         }
     }
 }
