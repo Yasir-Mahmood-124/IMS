@@ -23,15 +23,13 @@ Functional Requirements for Students:
 
 2). Provide necessary information to admin for verification (User registeration as a Student).
 
-3). View fee detail of the courses and can pay them online.
+3). View his/her academic record for the enroll course (Academic Progress).
 
-4). View his/her academic record for the enroll course (Academic Progress).
+4). They can receive alerts from admin (Communication).
 
-5). They can receive alerts from admin (Communication).
+5). They can also request the admin for password recovery in case of forgotten password.
 
-6). They can also request the admin for password recovery in case of forgotten password.
-
-7). They can view the course materail uploaded by the tecaher in their respective course.
+6). They can view the course materail uploaded by the tecaher in their respective course.
 
 Functional Requirements for Teahers: 
 
