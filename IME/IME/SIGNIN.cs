@@ -26,7 +26,6 @@ namespace IME
             {
                 string userName = userBox.Text;
                 string password = passwordbox.Text;
-                string userType = usertype.Text;
                 if(usertype.Text.ToLower() == "student")
                 {
                     var con = Configuration.getInstance().getConnection();
@@ -39,8 +38,35 @@ namespace IME
 
                     if (userExists > 0)
                     {
-                        SqlDataReader reader = cmd.ExecuteReader(); 
+                        UserDL.SignINAdminName = userName;
+                        UserDL.SignInAdminPassword = password;
+                        SqlCommand cmd1 = new SqlCommand("SELECT * FROM Students WHERE username = @username", con);
 
+                        cmd1.Parameters.AddWithValue("@username", UserDL.SignINAdminName);
+                        int student_id;
+                        try
+                        {
+                            using (SqlDataReader reader = cmd1.ExecuteReader())
+                            {
+                                while (reader.Read())
+                                {
+                                    if (reader["username"].ToString() == UserDL.SignINAdminName)
+                                    {
+                                        //studentIds.Add(reader.GetInt32(0)); // Assuming student_id is the first column
+                                        UserDL.adminID = int.Parse(reader["student_id"].ToString());
+                                    }
+                                }
+                            }
+
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("An error occurred: " + ex.Message);
+                        }
+                        cmd.ExecuteNonQuery();
+                        StudentPanel student = new StudentPanel();
+                        this.Controls.Clear();
+                        this.Controls.Add(student);
                         MessageBox.Show("You're logged in!");
                     }
                     else
