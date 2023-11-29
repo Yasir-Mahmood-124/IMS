@@ -34,6 +34,8 @@
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             courseMTab = new TabPage();
             tableLayoutPanel1 = new TableLayoutPanel();
@@ -50,7 +52,24 @@
             tableLayoutPanel6 = new TableLayoutPanel();
             button1 = new Button();
             viewbutton = new Button();
-            tabPage2 = new TabPage();
+            button2 = new Button();
+            cmGV = new DataGridView();
+            courseTab = new TabPage();
+            tableLayoutPanel7 = new TableLayoutPanel();
+            tableLayoutPanel8 = new TableLayoutPanel();
+            tableLayoutPanel9 = new TableLayoutPanel();
+            tableLayoutPanel10 = new TableLayoutPanel();
+            courseId = new Guna.UI2.WinForms.Guna2ComboBox();
+            label3 = new Label();
+            matrialbox = new TextBox();
+            label4 = new Label();
+            tableLayoutPanel11 = new TableLayoutPanel();
+            tableLayoutPanel12 = new TableLayoutPanel();
+            addbutton = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            matrialGV = new DataGridView();
+            logouttab = new TabPage();
             guna2TabControl1.SuspendLayout();
             courseMTab.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
@@ -59,13 +78,22 @@
             tableLayoutPanel4.SuspendLayout();
             tableLayoutPanel5.SuspendLayout();
             tableLayoutPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)cmGV).BeginInit();
+            courseTab.SuspendLayout();
+            tableLayoutPanel7.SuspendLayout();
+            tableLayoutPanel8.SuspendLayout();
+            tableLayoutPanel9.SuspendLayout();
+            tableLayoutPanel10.SuspendLayout();
+            tableLayoutPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)matrialGV).BeginInit();
             SuspendLayout();
             // 
             // guna2TabControl1
             // 
             guna2TabControl1.Alignment = TabAlignment.Left;
             guna2TabControl1.Controls.Add(courseMTab);
-            guna2TabControl1.Controls.Add(tabPage2);
+            guna2TabControl1.Controls.Add(courseTab);
+            guna2TabControl1.Controls.Add(logouttab);
             guna2TabControl1.Dock = DockStyle.Fill;
             guna2TabControl1.ItemSize = new Size(180, 40);
             guna2TabControl1.Location = new Point(0, 0);
@@ -100,14 +128,16 @@
             courseMTab.Padding = new Padding(3);
             courseMTab.Size = new Size(986, 717);
             courseMTab.TabIndex = 0;
-            courseMTab.Text = "Course_Matrial";
+            courseMTab.Text = "Course Marks";
             courseMTab.UseVisualStyleBackColor = true;
+            courseMTab.Click += courseMTab_Click;
             // 
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.ColumnCount = 1;
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 0, 0);
+            tableLayoutPanel1.Controls.Add(cmGV, 0, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(3, 3);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -116,6 +146,7 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel1.Size = new Size(980, 711);
             tableLayoutPanel1.TabIndex = 0;
+            tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
             // 
             // tableLayoutPanel2
             // 
@@ -131,6 +162,7 @@
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 28.6532955F));
             tableLayoutPanel2.Size = new Size(974, 349);
             tableLayoutPanel2.TabIndex = 0;
+            tableLayoutPanel2.Paint += tableLayoutPanel2_Paint;
             // 
             // tableLayoutPanel3
             // 
@@ -147,6 +179,7 @@
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel3.Size = new Size(968, 243);
             tableLayoutPanel3.TabIndex = 0;
+            tableLayoutPanel3.Paint += tableLayoutPanel3_Paint;
             // 
             // tableLayoutPanel4
             // 
@@ -165,6 +198,7 @@
             tableLayoutPanel4.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel4.Size = new Size(489, 115);
             tableLayoutPanel4.TabIndex = 0;
+            tableLayoutPanel4.Paint += tableLayoutPanel4_Paint;
             // 
             // cmIdbox
             // 
@@ -183,6 +217,7 @@
             cmIdbox.ShadowDecoration.CustomizableEdges = customizableEdges2;
             cmIdbox.Size = new Size(239, 36);
             cmIdbox.TabIndex = 0;
+            cmIdbox.SelectedIndexChanged += cmIdbox_SelectedIndexChanged;
             // 
             // guna2HtmlLabel1
             // 
@@ -193,6 +228,7 @@
             guna2HtmlLabel1.Size = new Size(121, 34);
             guna2HtmlLabel1.TabIndex = 1;
             guna2HtmlLabel1.Text = "Course Id";
+            guna2HtmlLabel1.Click += guna2HtmlLabel1_Click;
             // 
             // label1
             // 
@@ -204,6 +240,7 @@
             label1.Size = new Size(238, 32);
             label1.TabIndex = 2;
             label1.Text = "Student ID";
+            label1.Click += label1_Click;
             // 
             // studentidbox
             // 
@@ -222,6 +259,7 @@
             studentidbox.ShadowDecoration.CustomizableEdges = customizableEdges4;
             studentidbox.Size = new Size(239, 36);
             studentidbox.TabIndex = 3;
+            studentidbox.SelectedIndexChanged += studentidbox_SelectedIndexChanged;
             // 
             // tableLayoutPanel5
             // 
@@ -238,6 +276,7 @@
             tableLayoutPanel5.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel5.Size = new Size(467, 115);
             tableLayoutPanel5.TabIndex = 1;
+            tableLayoutPanel5.Paint += tableLayoutPanel5_Paint;
             // 
             // markbox
             // 
@@ -258,6 +297,7 @@
             markbox.ShadowDecoration.CustomizableEdges = customizableEdges6;
             markbox.Size = new Size(228, 51);
             markbox.TabIndex = 0;
+            markbox.TextChanged += markbox_TextChanged;
             markbox.Validating += markbox_Validating;
             // 
             // label2
@@ -270,6 +310,7 @@
             label2.Size = new Size(227, 32);
             label2.TabIndex = 1;
             label2.Text = "Student Marks";
+            label2.Click += label2_Click;
             // 
             // tableLayoutPanel6
             // 
@@ -280,6 +321,7 @@
             tableLayoutPanel6.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tableLayoutPanel6.Controls.Add(button1, 0, 0);
             tableLayoutPanel6.Controls.Add(viewbutton, 1, 0);
+            tableLayoutPanel6.Controls.Add(button2, 2, 0);
             tableLayoutPanel6.Dock = DockStyle.Fill;
             tableLayoutPanel6.Location = new Point(3, 252);
             tableLayoutPanel6.Name = "tableLayoutPanel6";
@@ -287,6 +329,7 @@
             tableLayoutPanel6.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel6.Size = new Size(968, 94);
             tableLayoutPanel6.TabIndex = 1;
+            tableLayoutPanel6.Paint += tableLayoutPanel6_Paint;
             // 
             // button1
             // 
@@ -298,7 +341,7 @@
             button1.Name = "button1";
             button1.Size = new Size(236, 88);
             button1.TabIndex = 0;
-            button1.Text = "Add Matrial";
+            button1.Text = "Add Marks";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -312,19 +355,255 @@
             viewbutton.Name = "viewbutton";
             viewbutton.Size = new Size(236, 88);
             viewbutton.TabIndex = 1;
-            viewbutton.Text = "View Matrial";
+            viewbutton.Text = "View Marks";
             viewbutton.UseVisualStyleBackColor = false;
             viewbutton.Click += viewbutton_Click;
             // 
-            // tabPage2
+            // button2
             // 
-            tabPage2.Location = new Point(184, 4);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(986, 717);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
-            tabPage2.UseVisualStyleBackColor = true;
+            button2.BackColor = Color.FromArgb(128, 255, 128);
+            button2.Dock = DockStyle.Fill;
+            button2.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(487, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(236, 88);
+            button2.TabIndex = 2;
+            button2.Text = "Update Marks";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // cmGV
+            // 
+            cmGV.AllowUserToAddRows = false;
+            cmGV.BackgroundColor = Color.FromArgb(224, 224, 224);
+            cmGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            cmGV.Dock = DockStyle.Fill;
+            cmGV.Location = new Point(3, 358);
+            cmGV.Name = "cmGV";
+            cmGV.RowHeadersWidth = 62;
+            cmGV.RowTemplate.Height = 33;
+            cmGV.Size = new Size(974, 350);
+            cmGV.TabIndex = 1;
+            // 
+            // courseTab
+            // 
+            courseTab.Controls.Add(tableLayoutPanel7);
+            courseTab.Location = new Point(184, 4);
+            courseTab.Name = "courseTab";
+            courseTab.Padding = new Padding(3);
+            courseTab.Size = new Size(986, 717);
+            courseTab.TabIndex = 1;
+            courseTab.Text = "Course Matrial";
+            courseTab.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel7
+            // 
+            tableLayoutPanel7.ColumnCount = 1;
+            tableLayoutPanel7.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel7.Controls.Add(tableLayoutPanel8, 0, 0);
+            tableLayoutPanel7.Controls.Add(matrialGV, 0, 1);
+            tableLayoutPanel7.Dock = DockStyle.Fill;
+            tableLayoutPanel7.Location = new Point(3, 3);
+            tableLayoutPanel7.Name = "tableLayoutPanel7";
+            tableLayoutPanel7.RowCount = 2;
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel7.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel7.Size = new Size(980, 711);
+            tableLayoutPanel7.TabIndex = 0;
+            // 
+            // tableLayoutPanel8
+            // 
+            tableLayoutPanel8.ColumnCount = 1;
+            tableLayoutPanel8.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel8.Controls.Add(tableLayoutPanel9, 0, 0);
+            tableLayoutPanel8.Controls.Add(tableLayoutPanel12, 0, 1);
+            tableLayoutPanel8.Dock = DockStyle.Fill;
+            tableLayoutPanel8.Location = new Point(3, 3);
+            tableLayoutPanel8.Name = "tableLayoutPanel8";
+            tableLayoutPanel8.RowCount = 2;
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 75.07163F));
+            tableLayoutPanel8.RowStyles.Add(new RowStyle(SizeType.Percent, 24.9283676F));
+            tableLayoutPanel8.Size = new Size(974, 349);
+            tableLayoutPanel8.TabIndex = 0;
+            // 
+            // tableLayoutPanel9
+            // 
+            tableLayoutPanel9.ColumnCount = 2;
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.Controls.Add(tableLayoutPanel10, 0, 0);
+            tableLayoutPanel9.Controls.Add(tableLayoutPanel11, 1, 0);
+            tableLayoutPanel9.Dock = DockStyle.Fill;
+            tableLayoutPanel9.Location = new Point(3, 3);
+            tableLayoutPanel9.Name = "tableLayoutPanel9";
+            tableLayoutPanel9.RowCount = 2;
+            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel9.Size = new Size(968, 256);
+            tableLayoutPanel9.TabIndex = 0;
+            // 
+            // tableLayoutPanel10
+            // 
+            tableLayoutPanel10.ColumnCount = 2;
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.Controls.Add(courseId, 1, 0);
+            tableLayoutPanel10.Controls.Add(label3, 0, 0);
+            tableLayoutPanel10.Controls.Add(matrialbox, 1, 1);
+            tableLayoutPanel10.Controls.Add(label4, 0, 1);
+            tableLayoutPanel10.Dock = DockStyle.Fill;
+            tableLayoutPanel10.Location = new Point(3, 3);
+            tableLayoutPanel10.Name = "tableLayoutPanel10";
+            tableLayoutPanel10.RowCount = 2;
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel10.Size = new Size(478, 122);
+            tableLayoutPanel10.TabIndex = 0;
+            // 
+            // courseId
+            // 
+            courseId.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            courseId.BackColor = Color.Transparent;
+            courseId.CustomizableEdges = customizableEdges7;
+            courseId.DrawMode = DrawMode.OwnerDrawFixed;
+            courseId.DropDownStyle = ComboBoxStyle.DropDownList;
+            courseId.FocusedColor = Color.FromArgb(94, 148, 255);
+            courseId.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            courseId.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            courseId.ForeColor = Color.FromArgb(68, 88, 112);
+            courseId.ItemHeight = 30;
+            courseId.Location = new Point(242, 12);
+            courseId.Name = "courseId";
+            courseId.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            courseId.Size = new Size(233, 36);
+            courseId.TabIndex = 0;
+            // 
+            // label3
+            // 
+            label3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label3.AutoSize = true;
+            label3.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(3, 14);
+            label3.Name = "label3";
+            label3.Size = new Size(233, 32);
+            label3.TabIndex = 1;
+            label3.Text = "Course_ID";
+            // 
+            // matrialbox
+            // 
+            matrialbox.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            matrialbox.Location = new Point(242, 76);
+            matrialbox.Name = "matrialbox";
+            matrialbox.Size = new Size(233, 31);
+            matrialbox.TabIndex = 2;
+            // 
+            // label4
+            // 
+            label4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(3, 75);
+            label4.Name = "label4";
+            label4.Size = new Size(233, 32);
+            label4.TabIndex = 3;
+            label4.Text = "Matrial ";
+            // 
+            // tableLayoutPanel11
+            // 
+            tableLayoutPanel11.ColumnCount = 2;
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.Dock = DockStyle.Fill;
+            tableLayoutPanel11.Location = new Point(487, 3);
+            tableLayoutPanel11.Name = "tableLayoutPanel11";
+            tableLayoutPanel11.RowCount = 2;
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tableLayoutPanel11.Size = new Size(478, 122);
+            tableLayoutPanel11.TabIndex = 1;
+            // 
+            // tableLayoutPanel12
+            // 
+            tableLayoutPanel12.ColumnCount = 4;
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel12.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
+            tableLayoutPanel12.Controls.Add(addbutton, 0, 0);
+            tableLayoutPanel12.Controls.Add(button3, 1, 0);
+            tableLayoutPanel12.Controls.Add(button4, 2, 0);
+            tableLayoutPanel12.Dock = DockStyle.Fill;
+            tableLayoutPanel12.Location = new Point(3, 265);
+            tableLayoutPanel12.Name = "tableLayoutPanel12";
+            tableLayoutPanel12.RowCount = 1;
+            tableLayoutPanel12.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel12.Size = new Size(968, 81);
+            tableLayoutPanel12.TabIndex = 1;
+            // 
+            // addbutton
+            // 
+            addbutton.BackColor = Color.FromArgb(128, 255, 128);
+            addbutton.Dock = DockStyle.Fill;
+            addbutton.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            addbutton.ForeColor = Color.White;
+            addbutton.Location = new Point(3, 3);
+            addbutton.Name = "addbutton";
+            addbutton.Size = new Size(236, 75);
+            addbutton.TabIndex = 0;
+            addbutton.Text = "Add Matrial";
+            addbutton.UseVisualStyleBackColor = false;
+            addbutton.Click += addbutton_Click;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(128, 255, 128);
+            button3.Dock = DockStyle.Fill;
+            button3.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(245, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(236, 75);
+            button3.TabIndex = 1;
+            button3.Text = "View Matrial";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(128, 255, 128);
+            button4.Dock = DockStyle.Fill;
+            button4.Font = new Font("Times New Roman", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(487, 3);
+            button4.Name = "button4";
+            button4.Size = new Size(236, 75);
+            button4.TabIndex = 2;
+            button4.Text = "Update Matrial";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
+            // matrialGV
+            // 
+            matrialGV.AllowUserToAddRows = false;
+            matrialGV.BackgroundColor = Color.FromArgb(224, 224, 224);
+            matrialGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            matrialGV.Dock = DockStyle.Fill;
+            matrialGV.Location = new Point(3, 358);
+            matrialGV.Name = "matrialGV";
+            matrialGV.RowHeadersWidth = 62;
+            matrialGV.RowTemplate.Height = 33;
+            matrialGV.Size = new Size(974, 350);
+            matrialGV.TabIndex = 1;
+            // 
+            // logouttab
+            // 
+            logouttab.Location = new Point(184, 4);
+            logouttab.Name = "logouttab";
+            logouttab.Size = new Size(986, 717);
+            logouttab.TabIndex = 2;
+            logouttab.Text = "Log out";
+            logouttab.UseVisualStyleBackColor = true;
             // 
             // TeacherPanel
             // 
@@ -343,6 +622,15 @@
             tableLayoutPanel5.ResumeLayout(false);
             tableLayoutPanel5.PerformLayout();
             tableLayoutPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)cmGV).EndInit();
+            courseTab.ResumeLayout(false);
+            tableLayoutPanel7.ResumeLayout(false);
+            tableLayoutPanel8.ResumeLayout(false);
+            tableLayoutPanel9.ResumeLayout(false);
+            tableLayoutPanel10.ResumeLayout(false);
+            tableLayoutPanel10.PerformLayout();
+            tableLayoutPanel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)matrialGV).EndInit();
             ResumeLayout(false);
         }
 
@@ -351,7 +639,6 @@
         private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
         private TabPage courseMTab;
         private TableLayoutPanel tableLayoutPanel1;
-        private TabPage tabPage2;
         private TableLayoutPanel tableLayoutPanel2;
         private TableLayoutPanel tableLayoutPanel3;
         private TableLayoutPanel tableLayoutPanel4;
@@ -365,5 +652,23 @@
         private TableLayoutPanel tableLayoutPanel6;
         private Button button1;
         private Button viewbutton;
+        private DataGridView cmGV;
+        private Button button2;
+        private TabPage courseTab;
+        private TableLayoutPanel tableLayoutPanel7;
+        private TableLayoutPanel tableLayoutPanel8;
+        private TableLayoutPanel tableLayoutPanel9;
+        private TableLayoutPanel tableLayoutPanel10;
+        private TableLayoutPanel tableLayoutPanel11;
+        private Guna.UI2.WinForms.Guna2ComboBox courseId;
+        private Label label3;
+        private TextBox matrialbox;
+        private Label label4;
+        private TableLayoutPanel tableLayoutPanel12;
+        private Button addbutton;
+        private DataGridView matrialGV;
+        private Button button3;
+        private Button button4;
+        private TabPage logouttab;
     }
 }

@@ -319,7 +319,7 @@ namespace IME
 
                 foreach (DataRow row in dataTable.Rows)
                 {
-                    int value = int.Parse(row["course_id"].ToString()); 
+                    int value = int.Parse(row["course_id"].ToString());
                     courseIdbox.Items.Add(value);
                 }
 
@@ -378,6 +378,12 @@ namespace IME
                 studentmessageGV.ColumnHeadersVisible = true;
                 studentmessageGV.RowHeadersVisible = true;
                 studentmessageGV.DefaultCellStyle.Padding = new Padding(0, 0, 0, 0);
+            }
+            if(add_student.SelectedTab == tabPage6)
+            {
+                SIGNIN signin = new SIGNIN();
+                this.Controls.Clear();
+                this.Controls.Add(signin);
             }
         }
 
@@ -649,7 +655,7 @@ namespace IME
 
         private void feebutton_Click(object sender, EventArgs e)
         {
-            
+
             if (!string.IsNullOrEmpty(courseIdbox.Text) && !string.IsNullOrEmpty(studentIdbox.Text) != null && amountbox.Text != "")
             {
                 int courseId = int.Parse(courseIdbox.Text);

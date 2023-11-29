@@ -46,6 +46,12 @@ namespace IME
                 courseGV.RowHeadersVisible = true;
                 courseGV.DefaultCellStyle.Padding = new Padding(0, 0, 0, 0);
             }
+            if(guna2TabControl1.SelectedTab == tabPage1)
+            {
+                SIGNIN signin = new SIGNIN();
+                this.Controls.Clear();
+                this.Controls.Add(signin);
+            }
             if (guna2TabControl1.SelectedTab == resulttab)
             {
                 var con = Configuration.getInstance().getConnection();

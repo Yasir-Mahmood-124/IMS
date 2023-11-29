@@ -99,16 +99,19 @@ namespace IME
                 if (usertype.Text.ToLower() == "teacher")
                 {
                     SqlCommand cmd = new SqlCommand("Insert into Teachers values ( @username,@password,@fullname,@email,@phone_number,@created_at,@updated_at,@active)", con);
-                    cmd.Parameters.AddWithValue("@username", tempUser.UserName);
-                    cmd.Parameters.AddWithValue("@password", tempUser.Password);
-                    cmd.Parameters.AddWithValue("@fullname", tempUser.Name);
-                    cmd.Parameters.AddWithValue("@email", tempUser.Email);
-                    cmd.Parameters.AddWithValue("@phone_number", tempUser.PhoneNumber);
+                    cmd.Parameters.AddWithValue("@username", userbox.Text);
+                    cmd.Parameters.AddWithValue("@password", passwordbox.Text);
+                    cmd.Parameters.AddWithValue("@fullname", nameBox.Text);
+                    cmd.Parameters.AddWithValue("@email", emailBox.Text);
+                    cmd.Parameters.AddWithValue("@phone_number", phonebox.Text);
                     cmd.Parameters.AddWithValue("@created_at", DateTime.Now);
                     cmd.Parameters.AddWithValue("@updated_at", DateTime.Now);
                     cmd.Parameters.AddWithValue("@active", 0);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("user add successfully");
+                    SIGNIN admin = new SIGNIN();
+                    this.Controls.Clear();
+                    this.Controls.Add(admin);
                 }
                 if (usertype.Text.ToLower() == "student")
                 {
@@ -123,6 +126,9 @@ namespace IME
                     cmd.Parameters.AddWithValue("@active", 0);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("user add successfully");
+                    SIGNIN admin = new SIGNIN();
+                    this.Controls.Clear();
+                    this.Controls.Add(admin);
                 }
             }
         }
