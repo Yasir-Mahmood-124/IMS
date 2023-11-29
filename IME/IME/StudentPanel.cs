@@ -118,9 +118,29 @@ namespace IME
                     }
                 }
             }
-            if(guna2TabControl1.SelectedTab == matrialtab)
+            if (guna2TabControl1.SelectedTab == matrialtab)
             {
+                var con = Configuration.getInstance().getConnection();
+                SqlCommand cmd = new SqlCommand(@"
+                    SELECT cm.material_name,c.course_name,cm.created_at  FROM Students s 
+                    INNER JOIN register_courses rc ON s.student_id = rc.student_id
+                    INNER JOIN Courses c ON c.course_id = rc.course_id
+                    INNER JOIN CourseMaterials cm ON cm.course_id = c.course_id 
+                    WHERE rc.active = 1 AND s.active = 1 AND c.active = 1 AND cm.active = 1
+                    AND s.student_id = @student_id", con);
+                cmd.Parameters.AddWithValue("@student_id", UserDL.adminID);
 
+                DataTable dataTable = new DataTable();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    dataTable.Load(reader);
+                }
+                cmGV.DataSource = dataTable;
+                cmGV.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+                cmGV.ColumnHeadersVisible = true;
+                cmGV.RowHeadersVisible = true;
+                cmGV.DefaultCellStyle.Padding = new Padding(0, 0, 0, 0);
             }
         }
 
@@ -264,6 +284,11 @@ namespace IME
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
